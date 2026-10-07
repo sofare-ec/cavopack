@@ -82,7 +82,7 @@ img { display: block; max-width: 100%; }
 .brand-row { height: 112px; max-width: 1290px; margin: 0 auto; padding: 0 10px; display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; border-bottom: 1px solid var(--line); }
 .brand { display: flex; align-items: center; gap: 9px; font-size: 34px; line-height: 1; font-weight: 800; letter-spacing: -1.1px; }
 .brand-mark { width: 48px; height: 48px; flex: 0 0 auto; object-fit: contain; }
-.brand-tagline { justify-self: end; align-self: end; max-width: 680px; margin: 0 0 33px; color: #f4f4f5; font-size: 20px; font-weight: 550; line-height: 1.1; text-align: right; }
+.brand-tagline { justify-self: end; align-self: end; max-width: 680px; margin-bottom: 39px; color: #f4f4f5; font-size: 20px; font-weight: 550; line-height: 1.1; text-align: right; }
 .icon-button { width: 42px; height: 42px; padding: 0; border: 0; background: transparent; color: #70747a; display: inline-grid; place-items: center; cursor: pointer; border-radius: 50%; transition: background .2s, color .2s; }
 .icon-button:hover { background: #fff2eb; color: var(--orange); }
 .primary-nav { min-height: 65px; padding: 0 max(calc((100vw - 1290px) / 2), 5.2vw); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; position: relative; background: #101113; }
