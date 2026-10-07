@@ -58,6 +58,12 @@ function AboutPage() {
     </section></>;
 }
 
+function IndustriesPage() {
+  return <><PageIntro title="Industries">Industry information about Cavopack’s packaging solutions will be added here.</PageIntro><Breadcrumbs parts={[{ label: "Industries" }]} />
+    <section className="tasty-empty"><h2>Industry details are coming soon.</h2></section>
+  </>;
+}
+
 function ContactPage() {
   return <><PageIntro title="Contact">{excerptText}</PageIntro><Breadcrumbs parts={[{ label: "Contact" }]} />
     <section className="tasty-contact tasty-section"><div className="contact-details"><article><h2>Physical Address</h2><p>304 North Cardinal St.<br />Dorchester Center, MA 02124</p></article><article><h2>Email Address</h2><p>info@company.com<br />contact@company.com</p></article><article><h2>Phone Numbers</h2><p>1-555-123-4567<br />1-800-123-4567</p></article><p className="template-note">These address and phone details are sample content from the original demo page, not verified Cavopack contact details.</p></div>
@@ -76,6 +82,7 @@ export default function TastyContentPage({ slug }: { slug: string[] }) {
   if (path === "recipes") content = <ArchivePage title="Recipes" items={tastyRecipes.slice(0, 9)} />;
   else if (path === "recipes/page/2") content = <ArchivePage title="Recipes" items={tastyRecipes.slice(9)} page={2} />;
   else if (path === "about") content = <AboutPage />;
+  else if (path === "industries") content = <IndustriesPage />;
   else if (path === "contact") content = <ContactPage />;
   else if (path === "author/admin_tasty") content = <ArchivePage title="Articles by Amie" items={tastyRecipes} />;
   else if (slug[0] === "category" && slug.length === 2 && categorySlugs.includes(slug[1] as typeof categorySlugs[number])) {

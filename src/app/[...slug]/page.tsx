@@ -5,6 +5,7 @@ const fixedRoutes = [
   "recipes",
   "recipes/page/2",
   "about",
+  "industries",
   "contact",
   "author/admin_tasty",
   "category/aperitives",
