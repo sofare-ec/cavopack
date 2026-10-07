@@ -75,7 +75,7 @@ img { display: block; max-width: 100%; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
 .site-header { position: relative; z-index: 20; background: #101113; }
-.floating-contact-links { position: fixed; z-index: 60; right: 64px; bottom: 20px; left: 64px; display: flex; justify-content: space-between; align-items: center; pointer-events: none; }
+.floating-contact-links { position: fixed; z-index: 60; right: 128px; bottom: 20px; left: 128px; display: flex; justify-content: space-between; align-items: center; pointer-events: none; }
 .floating-contact-links a { display: grid; place-items: center; pointer-events: auto; }
 .floating-contact-email img { width: 45px; height: 35px; object-fit: contain; }
 .floating-contact-whatsapp img { width: 40px; height: 40px; object-fit: contain; }
@@ -253,7 +253,7 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 760px) {
   html { scroll-padding-top: 70px; }
-  .floating-contact-links { right: 28px; bottom: 12px; left: 28px; }
+  .floating-contact-links { right: 56px; bottom: 12px; left: 56px; }
   .floating-contact-email img { width: 38px; height: 30px; }
   .floating-contact-whatsapp img { width: 35px; height: 35px; }
   .brand-row { height: 76px; padding: 0 19px; }
