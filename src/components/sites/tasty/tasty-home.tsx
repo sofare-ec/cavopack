@@ -7,7 +7,6 @@ import { useMemo, useState, type FormEvent, type ReactNode } from "react";
 import {
   Apple,
   BookOpenCheck,
-  Clock3,
   Mail,
 } from "lucide-react";
 import { TastyFooter, TastyHeader } from "./tasty-shell";
@@ -114,10 +113,6 @@ export default function TastyHome() {
           <div className="hero-copy">
             <span className="eyebrow">Welcome to</span>
             <h1>Tasty Fluffy<br />Pancakes</h1>
-            <div className="hero-meta">
-              <div className="hero-author"><Image src="/sites/tasty/images/chef-melissa.jpg" alt="Rachel Bradley" width={42} height={42} /><strong>By Rachel Bradley</strong></div>
-              <div className="hero-time"><Clock3 size={31} /><strong>1 hour and 30 mins</strong></div>
-            </div>
             <p className="hero-description">The Best Fluffy Pancakes recipe you will fall in love with. Full of tips and tricks to help you make the best pancakes… ever!</p>
             <div className="hero-actions">
               <Link className="button" href="#recipes"><BookOpenCheck size={18} fill="currentColor" />Cook Now</Link>
