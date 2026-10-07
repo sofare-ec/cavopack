@@ -327,3 +327,102 @@ img { display: block; max-width: 100%; }
   .category-card { height: 180px; }
   .footer-columns { grid-template-columns: 1fr; }
 }
+
+/* Local pages copied from the Tasty reference site */
+.tasty-page-intro { padding: 74px 22px 53px; text-align: center; background: var(--cream); }
+.tasty-page-intro h1 { margin: 16px auto 12px; font-size: clamp(36px, 5vw, 54px); line-height: 1.14; letter-spacing: -1.8px; }
+.tasty-page-intro > div { max-width: 760px; margin: 0 auto; color: var(--muted); line-height: 1.75; }
+.tasty-breadcrumbs { margin: 12px 0 0; color: #929398; font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+.tasty-breadcrumbs a:hover, .article-meta a:hover { color: var(--orange-dark); }
+.tasty-archive { max-width: 1290px; margin: 0 auto; padding: 55px 20px 110px; }
+.recipe-tags a { padding: 3px 9px; border-radius: 2px; color: var(--orange-dark); background: #fff2eb; font-size: 12px; font-weight: 750; text-transform: uppercase; }
+.recipe-tags a:hover { color: #fff; background: var(--orange); }
+.recipe-content h2 { margin: 17px 0 21px; font-size: 19px; line-height: 1.35; font-weight: 760; }
+.recipe-content h2 a:hover { color: var(--orange-dark); }
+.recipe-byline:hover { color: var(--orange-dark); }
+.tasty-pagination { margin: 55px 0 0; display: flex; justify-content: center; align-items: center; gap: 10px; }
+.tasty-pagination a { min-width: 42px; padding: 9px 13px; border: 1px solid var(--line); text-align: center; }
+.tasty-pagination a.is-current, .tasty-pagination a:hover { border-color: var(--orange); color: #fff; background: var(--orange); }
+.tasty-article { max-width: 990px; margin: 0 auto; padding: 0 20px 100px; }
+.article-meta { margin: 0 auto 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; color: #77797f; font-size: 12px; text-transform: uppercase; letter-spacing: .45px; }
+.article-meta a:first-child { color: var(--orange-dark); font-weight: 750; }
+.article-cover { max-height: 580px; margin: 0 0 44px; overflow: hidden; border-radius: 10px; background: #f5f3f1; }
+.article-cover img { width: 100%; max-height: 580px; object-fit: cover; }
+.article-body { max-width: 780px; margin: 0 auto; color: #505157; font-size: 16px; line-height: 1.9; }
+.recipe-box { margin: 38px 0; padding: 27px; border: 1px solid #e7e3df; border-radius: 10px; background: #fffdfa; color: var(--ink); }
+.recipe-box-heading { display: flex; align-items: center; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 18px; }
+.recipe-box-heading > img { width: 74px; height: 74px; flex: 0 0 auto; object-fit: cover; border-radius: 7px; }
+.recipe-box-heading h2 { margin: 0 0 3px; font-size: 22px; line-height: 1.25; }
+.recipe-box-heading p { margin: 0; color: var(--muted); font-size: 13px; }
+.recipe-box-heading button { margin-left: auto; padding: 8px 15px; border: 1px solid #dedbd7; border-radius: 6px; background: #fff; cursor: pointer; }
+.recipe-facts { padding: 19px 0; display: flex; flex-wrap: wrap; gap: 12px 22px; border-bottom: 1px solid var(--line); color: #74767a; font-size: 13px; }
+.recipe-facts span { display: grid; gap: 2px; }
+.recipe-facts b { color: #24252a; }
+.recipe-box-columns { display: grid; grid-template-columns: .9fr 1.1fr; gap: 35px; }
+.recipe-box-columns h3 { font-size: 17px; }
+.recipe-box-columns li { margin: 0 0 9px; color: #4e5054; line-height: 1.65; }
+.template-note { padding: 12px 15px; border-left: 3px solid #e89160; color: #74767a; background: #fff3eb; font-size: 12px; line-height: 1.6; }
+.tasty-comments { max-width: 780px; margin: 55px auto 0; padding-top: 35px; border-top: 1px solid var(--line); }
+.sample-comment { margin: 0 0 30px; padding: 20px; border-radius: 8px; background: #f7f7f7; }
+.sample-comment h3 { margin: 0 0 2px; font-size: 16px; }
+.sample-comment > a { color: var(--muted); font-size: 12px; }
+.sample-comment p { margin: 12px 0; }
+.tasty-comments h2, .tasty-contact-form h2 { margin: 0 0 9px; font-size: 29px; }
+.tasty-comments > p, .tasty-contact-form > div > p { color: var(--muted); font-size: 14px; }
+.tasty-form { margin-top: 23px; display: grid; gap: 17px; }
+.tasty-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
+.tasty-form label { display: grid; gap: 7px; font-size: 13px; font-weight: 650; }
+.tasty-form input, .tasty-form textarea { width: 100%; min-height: 47px; padding: 11px 13px; border: 1px solid #dedede; border-radius: 6px; outline-color: #f1a47d; background: #fff; }
+.tasty-form textarea { resize: vertical; }
+.tasty-form .button { justify-self: start; }
+.preview-form-notice { padding: 16px 18px; border-radius: 6px; color: #315f40; background: #edf8ef; }
+.article-related { margin-top: 35px; padding-top: 23px; display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); color: var(--orange-dark); font-weight: 650; }
+.tasty-section { max-width: 1200px; margin: 0 auto; padding: 72px 20px 100px; }
+.about-story { display: grid; grid-template-columns: 1fr .86fr; align-items: center; gap: 70px; }
+.about-story h2, .about-video h2, .about-chefs h2, .about-testimonials h2, .contact-copy h2 { margin: 15px 0 20px; font-size: clamp(28px, 4vw, 43px); line-height: 1.2; letter-spacing: -1px; }
+.about-story p, .about-video p, .contact-copy p { color: var(--muted); line-height: 1.8; }
+.about-story > img { width: 100%; max-height: 520px; object-fit: cover; border-radius: 10px; }
+.about-video { position: relative; min-height: 440px; margin: 85px 0; display: grid; place-items: center; overflow: hidden; border-radius: 12px; color: white; text-align: center; isolation: isolate; }
+.about-video > img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+.about-video::after { content: ""; position: absolute; inset: 0; z-index: -1; background: #17120fa8; }
+.about-video > div { max-width: 700px; padding: 50px 24px; }
+.about-video p { color: #f0ece8; }
+.about-chefs, .about-testimonials { padding: 65px 20px; text-align: center; background: #fffaf8; }
+.about-chefs > p, .about-testimonials > p { max-width: 720px; margin: 0 auto 42px; color: var(--muted); }
+.about-chefs .chef-grid { margin-top: 35px; }
+.grandma-panel { margin: 75px 0; padding: 38px; display: flex; align-items: center; gap: 28px; border-radius: 12px; background: #fff2e9; }
+.grandma-panel img { width: 110px; height: 110px; object-fit: cover; border-radius: 50%; }
+.grandma-panel h2 { margin: 3px 0; font-size: 27px; }
+.grandma-panel p { margin: 5px 0 10px; color: var(--muted); }
+.grandma-panel a { color: var(--orange-dark); font-weight: 700; }
+.testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.testimonial-grid article { padding: 25px; border-radius: 10px; background: #fff; box-shadow: 0 8px 28px #2525250c; }
+.testimonial-grid img { width: 72px; height: 72px; margin: 0 auto 15px; object-fit: cover; border-radius: 50%; }
+.testimonial-grid p { color: var(--muted); font-size: 14px; }
+.tasty-contact { display: grid; grid-template-columns: .85fr 1.15fr; gap: 65px; padding-bottom: 30px; }
+.contact-details article { margin-bottom: 20px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 8px; }
+.contact-details h2, .contact-highlights h3 { margin: 0 0 5px; font-size: 17px; }
+.contact-details article p, .contact-highlights p { margin: 0; color: var(--muted); line-height: 1.7; }
+.contact-details .template-note { margin-top: 25px; }
+.contact-copy h2 { margin-top: 0; font-size: 31px; }
+.contact-highlights { margin-top: 27px; padding: 20px 0; display: grid; gap: 12px; border-top: 1px solid var(--line); }
+.tasty-contact-form { max-width: 1160px; margin: 0 auto 100px; padding: 48px; display: grid; grid-template-columns: .7fr 1.3fr; gap: 45px; border-radius: 12px; background: #fff9f6; }
+.tasty-empty { min-height: 50vh; padding: 100px 22px; text-align: center; }
+.tasty-empty h1 { font-size: 42px; }
+
+@media (max-width: 760px) {
+  .tasty-page-intro { padding: 54px 20px 37px; }
+  .tasty-archive { padding: 35px 20px 65px; }
+  .recipe-box { padding: 18px; }
+  .recipe-box-columns { grid-template-columns: 1fr; gap: 4px; }
+  .tasty-section { padding: 50px 20px 68px; }
+  .about-story, .tasty-contact, .tasty-contact-form { grid-template-columns: 1fr; gap: 30px; }
+  .about-story > img { max-height: 430px; }
+  .about-video { min-height: 360px; margin: 55px 0; }
+  .grandma-panel { padding: 24px; align-items: flex-start; }
+  .grandma-panel img { width: 78px; height: 78px; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .tasty-contact-form { margin: 0 20px 70px; padding: 28px 22px; }
+  .tasty-form-row { grid-template-columns: 1fr; }
+  .article-meta { font-size: 10px; gap: 8px 11px; }
+}

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tasty — Recipes for every day",
-  description: "Discover this week's recipes, cooking inspiration, and the Tasty kitchen community.",
+  title: "Cavopack — Custom Packaging",
+  description: "Cavopack website pages and product information.",
 };
 
 export default function RootLayout({
