@@ -120,7 +120,7 @@ export default function TastyHome() {
     <main className="tasty-site">
       <header className="site-header">
         <div className="brand-row">
-          <a className="brand" href="#top" aria-label="Cavopack home"><span>Cavopack</span></a>
+          <a className="brand" href="#top" aria-label="Cavopack home"><Image className="brand-mark" src="/sites/tasty/images/cavopack-box-symbol.png" alt="" width={34} height={34} /><span>Cavopack</span></a>
         </div>
         <nav className={`primary-nav${mobileMenuOpen ? " is-open" : ""}`} aria-label="Main navigation">
           <div className="nav-social"><SocialLinks compact /></div>
