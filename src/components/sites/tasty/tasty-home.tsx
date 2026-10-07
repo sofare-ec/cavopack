@@ -26,37 +26,37 @@ const recipes: Recipe[] = [
     title: "Topping Marzipan Tart Cheesecake Sweet Lollipop",
     category: ["Aperitives"],
     image: "/sites/tasty/images/category-sweets.jpg",
-    href: "https://startersites.io/blocksy/tasty/2021/04/16/topping-marzipan-tart-cheesecake-sweet-lollipop/",
+    href: "#recipes",
   },
   {
     title: "Topping Carrot Cake Jujubes Lemon Drops",
     category: ["Pizzas"],
     image: "/sites/tasty/images/recipe-pizza.jpg",
-    href: "https://startersites.io/blocksy/tasty/2021/04/16/topping-carrot-cake-jujubes-lemon-drops/",
+    href: "#recipes",
   },
   {
     title: "Muffin Donut Soufflé Piebear Claw Croissant",
     category: ["Aperitives"],
     image: "/sites/tasty/images/recipe-avocado.jpg",
-    href: "https://startersites.io/blocksy/tasty/2021/04/16/muffin-donut-souffle-piebear-claw-croissant/",
+    href: "#recipes",
   },
   {
     title: "Bearclaw Dragée Sweet Rolloat Mosering",
     category: ["Salads"],
     image: "/sites/tasty/images/recipe-salad.jpg",
-    href: "https://startersites.io/blocksy/tasty/2021/04/16/bearclaw-dragee-sweet-rolloat-mosering/",
+    href: "#recipes",
   },
   {
     title: "Gingerbread Donut Bear Claw Powder",
     category: ["Aperitives"],
     image: "/sites/tasty/images/recipe-bowl.jpg",
-    href: "https://startersites.io/blocksy/tasty/2021/04/16/gingerbread-donut-bear-claw-powder/",
+    href: "#recipes",
   },
   {
     title: "Sweet roll chupa chups halvah muffin",
     category: ["Deserts", "Salads"],
     image: "/sites/tasty/images/recipe-berries.jpg",
-    href: "https://startersites.io/blocksy/tasty/2021/04/16/sweet-roll-chupa-chups-halvah-muffin/",
+    href: "#recipes",
   },
 ];
 
@@ -96,10 +96,6 @@ function SocialLinks({ compact = false }: { compact?: boolean }) {
   );
 }
 
-function sourceRecipesUrl(path: string) {
-  return `https://startersites.io/blocksy/tasty/${path}`;
-}
-
 export default function TastyHome() {
   const [query, setQuery] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -134,9 +130,9 @@ export default function TastyHome() {
           </button>
           <div className="nav-links">
             <a className="active" href="#top" onClick={() => setMobileMenuOpen(false)}>Home</a>
-            <a href={sourceRecipesUrl("recipes/")} onClick={() => setMobileMenuOpen(false)}>Recipes</a>
-            <a href={sourceRecipesUrl("about/")} onClick={() => setMobileMenuOpen(false)}>About</a>
-            <a href={sourceRecipesUrl("contact/")} onClick={() => setMobileMenuOpen(false)}>Contact</a>
+            <a href="#recipes" onClick={() => setMobileMenuOpen(false)}>Recipes</a>
+            <a href="#chefs" onClick={() => setMobileMenuOpen(false)}>About</a>
+            <a href="#footer" onClick={() => setMobileMenuOpen(false)}>Contact</a>
           </div>
           <a className="button button-small submit-recipe" href="#newsletter">Submit Recipe</a>
         </nav>
@@ -178,13 +174,13 @@ export default function TastyHome() {
         </div>
         <div className="recipe-actions">
           {(categoryFilter || query) && <button className="clear-filter" onClick={() => { setCategoryFilter(null); setQuery(""); }}>Clear search and filters</button>}
-          <a className="button" href={sourceRecipesUrl("recipes/")}>View all Recipes</a>
+          <a className="button" href="#recipes">View all Recipes</a>
         </div>
       </section>
 
       <section className="category-section section-shell" aria-labelledby="category-title">
         <div className="section-heading"><h2 id="category-title">Recipes By Category</h2><p>Fusce dignissim blandit justo, eget elementum risus tristique. Nunc lacus lacus, sit amet accumsan est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus.</p></div>
-        <div className="category-grid">{categories.map((category) => <a className="category-card" href={sourceRecipesUrl("recipes/")} key={category.title} aria-label={`Browse ${category.title} recipes`}>
+        <div className="category-grid">{categories.map((category) => <a className="category-card" href="#recipes" key={category.title} aria-label={`Browse ${category.title} recipes`}>
           <Image src={category.image} alt="" width={640} height={620} sizes="(max-width: 640px) 100vw, 25vw" />
           <span className="category-count">{category.count}</span><strong>{category.title}</strong>
         </a>)}</div>
