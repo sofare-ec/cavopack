@@ -76,12 +76,12 @@ img { display: block; max-width: 100%; }
 
 .site-header { position: relative; z-index: 20; background: #101113; }
 .brand-row { height: 112px; max-width: 1290px; margin: 0 auto; padding: 0 10px; display: grid; grid-template-columns: 1fr auto; align-items: center; border-bottom: 1px solid var(--line); }
-.brand { display: flex; align-items: center; gap: 9px; font-size: 29px; line-height: 1; font-weight: 800; letter-spacing: -1.1px; }
-.brand-mark { width: 34px; height: 34px; flex: 0 0 auto; object-fit: contain; }
+.brand { display: flex; align-items: center; gap: 9px; font-size: 34px; line-height: 1; font-weight: 800; letter-spacing: -1.1px; }
+.brand-mark { width: 48px; height: 48px; flex: 0 0 auto; object-fit: contain; }
 .icon-button { width: 42px; height: 42px; padding: 0; border: 0; background: transparent; color: #70747a; display: inline-grid; place-items: center; cursor: pointer; border-radius: 50%; transition: background .2s, color .2s; }
 .icon-button:hover { background: #fff2eb; color: var(--orange); }
-.whatsapp-link { display: flex; align-items: center; justify-self: end; gap: 8px; color: #fff; font-size: 16px; font-weight: 600; white-space: nowrap; }
-.whatsapp-link img { width: 32px; height: 32px; }
+.whatsapp-link { display: flex; align-items: center; justify-self: end; color: #fff; }
+.whatsapp-link img { width: 48px; height: 48px; }
 .whatsapp-link:hover { color: var(--orange); }
 .primary-nav { min-height: 65px; padding: 0 max(calc((100vw - 1290px) / 2), 5.2vw); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; position: relative; background: #101113; }
 .primary-nav::after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; width: min(100%, 1290px); height: 1px; margin: 0 auto; background: var(--line); pointer-events: none; }
@@ -253,10 +253,9 @@ img { display: block; max-width: 100%; }
 @media (max-width: 760px) {
   html { scroll-padding-top: 70px; }
   .brand-row { height: 76px; padding: 0 19px; }
-  .brand { gap: 6px; font-size: 25px; }
-  .brand-mark { width: 29px; height: 29px; }
-  .whatsapp-link { gap: 5px; font-size: 13px; }
-  .whatsapp-link img { width: 25px; height: 25px; }
+  .brand { gap: 6px; font-size: 29px; }
+  .brand-mark { width: 37.5px; height: 37.5px; }
+  .whatsapp-link img { width: 37.5px; height: 37.5px; }
   .icon-button { width: 37px; height: 37px; }
   .primary-nav { position: sticky; top: 0; min-height: 58px; padding: 0 18px; grid-template-columns: 1fr auto 1fr; background: #ef875d; border: 0; }
   .primary-nav::after { display: none; }
