@@ -79,9 +79,10 @@ img { display: block; max-width: 100%; }
 .floating-contact-links a { display: grid; place-items: center; pointer-events: auto; }
 .floating-contact-email img { width: 45px; height: 35px; object-fit: contain; }
 .floating-contact-whatsapp img { width: 40px; height: 40px; object-fit: contain; }
-.brand-row { height: 112px; max-width: 1290px; margin: 0 auto; padding: 0 10px; display: grid; grid-template-columns: 1fr auto; align-items: center; border-bottom: 1px solid var(--line); }
+.brand-row { height: 112px; max-width: 1290px; margin: 0 auto; padding: 0 10px; display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; border-bottom: 1px solid var(--line); }
 .brand { display: flex; align-items: center; gap: 9px; font-size: 34px; line-height: 1; font-weight: 800; letter-spacing: -1.1px; }
 .brand-mark { width: 48px; height: 48px; flex: 0 0 auto; object-fit: contain; }
+.brand-tagline { justify-self: end; align-self: end; max-width: 680px; margin-bottom: 39px; color: #f4f4f5; font-size: 20px; font-weight: 550; line-height: 1.1; text-align: right; }
 .icon-button { width: 42px; height: 42px; padding: 0; border: 0; background: transparent; color: #70747a; display: inline-grid; place-items: center; cursor: pointer; border-radius: 50%; transition: background .2s, color .2s; }
 .icon-button:hover { background: #fff2eb; color: var(--orange); }
 .primary-nav { min-height: 65px; padding: 0 max(calc((100vw - 1290px) / 2), 5.2vw); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; position: relative; background: #101113; }
@@ -114,7 +115,6 @@ img { display: block; max-width: 100%; }
 .hero-copy { padding-top: 8px; }
 .eyebrow { display: inline-flex; min-height: 37px; align-items: center; padding: 0 15px; color: var(--orange-dark); background: #fff1e9; border-radius: 3px; font-size: 13px; font-weight: 750; text-transform: uppercase; }
 .hero h1 { margin: 23px 0 38px; font-size: clamp(58px, 5.7vw, 78px); line-height: 1.32; letter-spacing: -3.7px; font-weight: 800; }
-.hero-tagline { display: block; font-size: .6em; line-height: 1.3; letter-spacing: -.5px; }
 .hero-meta { width: 84%; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: end; }
 .hero-author, .hero-time { display: flex; min-height: 67px; flex-direction: column; justify-content: space-between; align-items: flex-start; gap: 7px; font-size: 15px; }
 .hero-author img { width: 30px; height: 30px; object-fit: cover; object-position: center 25%; border-radius: 50%; }
@@ -257,9 +257,10 @@ img { display: block; max-width: 100%; }
   .floating-contact-links { right: 12px; bottom: 12px; left: 12px; }
   .floating-contact-email img { width: 38px; height: 30px; }
   .floating-contact-whatsapp img { width: 35px; height: 35px; }
-  .brand-row { height: 76px; padding: 0 19px; }
+  .brand-row { height: auto; min-height: 76px; padding: 12px 19px 10px; grid-template-columns: 1fr; justify-items: start; gap: 8px; }
   .brand { gap: 6px; font-size: 29px; }
   .brand-mark { width: 37.5px; height: 37.5px; }
+  .brand-tagline { justify-self: start; align-self: start; max-width: 100%; margin: 0; font-size: 15px; line-height: 1.35; text-align: left; }
   .icon-button { width: 37px; height: 37px; }
   .primary-nav { position: sticky; top: 0; min-height: 58px; padding: 0 18px; grid-template-columns: 1fr auto 1fr; background: #ef875d; border: 0; }
   .primary-nav::after { display: none; }
