@@ -24,7 +24,7 @@ export function TastyHeader() {
     <nav className={`primary-nav${open ? " is-open" : ""}`} aria-label="Main navigation">
       <div className="nav-social"><span>Custom packaging for your brand</span></div>
       <button className="mobile-menu-toggle" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)}>{open ? <X size={22} /> : <Menu size={22} />}</button>
-      <div className="nav-links">{nav.map(([label, href, active]) => <Link key={label} className={active ? "active" : ""} href={href} onClick={() => setOpen(false)}>{label}</Link>)}</div>
+      <div className="nav-links">{nav.map(([label, href, active]) => <Link key={label} className={active || label === "Contact" ? "active" : ""} href={href} onClick={() => setOpen(false)}>{label}</Link>)}</div>
     </nav>
   </header>;
 }
