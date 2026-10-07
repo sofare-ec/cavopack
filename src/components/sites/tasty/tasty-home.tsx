@@ -11,8 +11,6 @@ import {
   Clock3,
   Mail,
   Menu,
-  Search,
-  UserRound,
   X,
 } from "lucide-react";
 
@@ -104,8 +102,6 @@ function sourceRecipesUrl(path: string) {
 
 export default function TastyHome() {
   const [query, setQuery] = useState("");
-  const [searchOpen, setSearchOpen] = useState(false);
-  const [loginOpen, setLoginOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
   const [subscribed, setSubscribed] = useState(false);
@@ -129,9 +125,7 @@ export default function TastyHome() {
     <main className="tasty-site">
       <header className="site-header">
         <div className="brand-row">
-          <button className="icon-button" aria-label="Open search" onClick={() => setSearchOpen(true)}><Search size={20} /></button>
           <a className="brand" href="#top" aria-label="Tasty home"><ChefHat className="brand-mark" size={34} fill="currentColor" /><span>Tasty</span></a>
-          <button className="icon-button" aria-label="Log in" onClick={() => setLoginOpen(true)}><UserRound size={19} /></button>
         </div>
         <nav className={`primary-nav${mobileMenuOpen ? " is-open" : ""}`} aria-label="Main navigation">
           <div className="nav-social"><SocialLinks compact /></div>
@@ -242,8 +236,6 @@ export default function TastyHome() {
         <div className="copyright">Copyright © 2025 - WordPress Theme by <a href="https://creativethemes.com/" target="_blank" rel="noreferrer">CreativeThemes</a></div>
       </footer>
 
-      {searchOpen && <div className="modal-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setSearchOpen(false); }}><section className="site-modal" role="dialog" aria-modal="true" aria-labelledby="search-title"><button className="modal-close" aria-label="Close search" onClick={() => setSearchOpen(false)}><X size={20} /></button><Search size={23} className="modal-icon" /><h2 id="search-title">Search recipes</h2><input autoFocus type="search" placeholder="Type a recipe or category…" value={query} onChange={(event) => setQuery(event.target.value)} /><p>Results update in the recipe section as you type.</p><button className="button" onClick={() => { setSearchOpen(false); document.getElementById("recipes")?.scrollIntoView({ behavior: "smooth" }); }}>See results</button></section></div>}
-      {loginOpen && <div className="modal-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setLoginOpen(false); }}><section className="site-modal" role="dialog" aria-modal="true" aria-labelledby="login-title"><button className="modal-close" aria-label="Close login" onClick={() => setLoginOpen(false)}><X size={20} /></button><UserRound size={24} className="modal-icon" /><h2 id="login-title">Welcome back</h2><p>Sign in to save your favorite recipes.</p><label>Email address<input type="email" placeholder="you@example.com" /></label><label>Password<input type="password" placeholder="Password" /></label><button className="button" onClick={() => setLoginOpen(false)}>Continue</button><small>This local preview does not connect to an account service.</small></section></div>}
     </main>
   );
 }
