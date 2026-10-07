@@ -92,7 +92,8 @@ img { display: block; max-width: 100%; }
 .social-links-compact { gap: 16px; }
 .social-links-compact a { width: 18px; height: 20px; color: #686e73; background: transparent; }
 .social-links-compact a:hover { color: var(--orange); background: transparent; transform: none; }
-.nav-links { grid-column: 1 / -1; width: min(100%, 1290px); justify-self: center; display: flex; justify-content: space-between; align-items: center; gap: 56px; }
+.nav-links { grid-column: 1 / -1; width: min(100%, 1290px); justify-self: center; display: flex; justify-content: flex-start; align-items: center; gap: 56px; }
+.nav-links a:last-child { margin-left: auto; }
 .nav-links a { color: #c1c3c7; font-size: 15px; transition: color .2s; }
 .nav-links a:hover, .nav-links a.active { color: var(--orange); }
 .button { min-height: 56px; padding: 0 24px; display: inline-flex; gap: 10px; justify-content: center; align-items: center; color: #fff; background: var(--orange); border: 2px solid var(--orange); border-radius: 11px; font-size: 15px; font-weight: 650; white-space: nowrap; cursor: pointer; transition: background .2s, border-color .2s, transform .2s, box-shadow .2s; }
@@ -259,6 +260,7 @@ img { display: block; max-width: 100%; }
   .mobile-menu-toggle { width: 42px; height: 42px; display: grid; place-items: center; border: 0; color: #fff; background: transparent; cursor: pointer; }
   .nav-links { position: absolute; top: 58px; left: 0; right: 0; width: auto; grid-column: auto; justify-self: auto; justify-content: normal; display: none; padding: 8px 20px 16px; flex-direction: column; align-items: stretch; gap: 0; background: #ef875d; box-shadow: 0 12px 20px #9d4e2822; }
   .primary-nav.is-open .nav-links { display: flex; }
+  .nav-links a:last-child { margin-left: 0; }
   .nav-links a { padding: 12px 6px; color: #fff; border-top: 1px solid #ffffff35; }
   .nav-links a.active, .nav-links a:hover { color: #fff4d9; }
   .submit-recipe { grid-column: 3; min-height: 34px; padding: 0 12px; font-size: 12px; background: #cf6235; border-color: #cf6235; }
