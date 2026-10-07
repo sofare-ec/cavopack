@@ -25,7 +25,6 @@ export function TastyHeader() {
       <div className="nav-social"><span>Custom packaging for your brand</span></div>
       <button className="mobile-menu-toggle" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)}>{open ? <X size={22} /> : <Menu size={22} />}</button>
       <div className="nav-links">{nav.map(([label, href, active]) => <Link key={label} className={active ? "active" : ""} href={href} onClick={() => setOpen(false)}>{label}</Link>)}</div>
-      <Link className="button button-small submit-recipe" href="/contact/">Contact us</Link>
     </nav>
   </header>;
 }
