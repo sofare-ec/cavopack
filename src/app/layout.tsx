@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Tasty — Recipes for every day",
+  description: "Discover this week's recipes, cooking inspiration, and the Tasty kitchen community.",
 };
 
 export default function RootLayout({
