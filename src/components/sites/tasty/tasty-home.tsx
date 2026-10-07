@@ -112,7 +112,7 @@ export default function TastyHome() {
         <div className="hero-inner">
           <div className="hero-copy">
             <span className="eyebrow">Welcome to</span>
-            <h1>Cavopack<br /><span className="hero-tagline">Manufacturer of Luxury Gift Boxes and Paper Packaging</span></h1>
+            <h1>Cavopack<br /><span className="hero-tagline">China-based manufacturer of luxury gift boxes and paper packaging</span></h1>
             <p className="hero-description">The Best Fluffy Pancakes recipe you will fall in love with. Full of tips and tricks to help you make the best pancakes… ever!</p>
             <div className="hero-actions">
               <Link className="button" href="#recipes"><BookOpenCheck size={18} fill="currentColor" />Cook Now</Link>
