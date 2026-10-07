@@ -112,7 +112,7 @@ export default function TastyHome() {
         <FoodDoodles />
         <div className="hero-inner">
           <div className="hero-copy">
-            <span className="eyebrow">Receipe of the day</span>
+            <span className="eyebrow">Welcome to</span>
             <h1>Tasty Fluffy<br />Pancakes</h1>
             <div className="hero-meta">
               <div className="hero-author"><Image src="/sites/tasty/images/chef-melissa.jpg" alt="Rachel Bradley" width={42} height={42} /><strong>By Rachel Bradley</strong></div>
