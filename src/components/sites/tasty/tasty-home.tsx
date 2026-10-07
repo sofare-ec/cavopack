@@ -113,7 +113,7 @@ export default function TastyHome() {
           <div className="hero-copy">
             <span className="eyebrow">Welcome to</span>
             <h1>Cavopack<br /><span className="hero-tagline">China-based Manufacturer of Luxury Gift Boxes and Paper Packaging</span></h1>
-            <p className="hero-description">Paper Bags, Packaging, Gift Boxes, Stickers, Labels, and Bakery Boxes<br />Process: Sampling, Customization, and Quotation</p>
+            <p className="hero-description"><span className="hero-description-products">Paper Bags, Packaging, Gift Boxes, Stickers, Labels, and Bakery Boxes</span><br />Process: Sampling, Customization, and Quotation</p>
             <div className="hero-actions">
               <Link className="button" href="#recipes"><BookOpenCheck size={18} fill="currentColor" />Cook Now</Link>
               <Link className="button button-outline" href="#recipes"><span className="cloche">♨</span>Explore Recipes</Link>
