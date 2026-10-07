@@ -129,7 +129,7 @@ export default function TastyHome() {
           </button>
           <div className="nav-links">
             <a className="active" href="#top" onClick={() => setMobileMenuOpen(false)}>Home</a>
-            <a href="#recipes" onClick={() => setMobileMenuOpen(false)}>Recipes</a>
+            <a href="#recipes" onClick={() => setMobileMenuOpen(false)}>Product</a>
             <a href="#chefs" onClick={() => setMobileMenuOpen(false)}>About</a>
             <a href="#footer" onClick={() => setMobileMenuOpen(false)}>Contact</a>
           </div>
