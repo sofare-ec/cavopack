@@ -62,6 +62,7 @@ const recipes: Recipe[] = [
   {
     title: "Gingerbread Donut Bear Claw Powder",
     category: ["Aperitives"],
+    categoryLabel: "STICKERS",
     image: "/sites/tasty/images/product-type-05.webp",
     href: "/2021/04/16/gingerbread-donut-bear-claw/",
   },
