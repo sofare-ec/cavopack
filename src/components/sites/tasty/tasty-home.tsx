@@ -99,7 +99,7 @@ export default function TastyHome() {
 
   useEffect(() => {
     if (carouselPaused) return;
-    const timer = window.setInterval(() => setHeroSlide((current) => (current + 1) % heroSlides.length), 2000);
+    const timer = window.setInterval(() => setHeroSlide((current) => (current + 1) % heroSlides.length), 4000);
     return () => window.clearInterval(timer);
   }, [carouselPaused]);
 
