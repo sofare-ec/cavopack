@@ -163,7 +163,7 @@ export default function TastyHome() {
         </div>
         <div className="recipe-actions">
           {(categoryFilter || query) && <button className="clear-filter" onClick={() => { setCategoryFilter(null); setQuery(""); }}>Clear search and filters</button>}
-          <Link className="button" href="/recipes/">View all Recipes</Link>
+          <span className="recipe-actions-divider" aria-hidden="true" />
         </div>
       </section>
 
