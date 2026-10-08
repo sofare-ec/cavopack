@@ -55,7 +55,7 @@ const recipes: Recipe[] = [
   {
     title: "Bearclaw Dragée Sweet Rolloat Mosering",
     category: ["Salads"],
-    image: "/sites/tasty/images/farhad-ibrahimzade-d-domdrwoaq-unsplash-800x530.jpg",
+    image: "/sites/tasty/images/product-type-04.png",
     href: "/2021/04/16/bearclaw-dragee-sweet-rolloat-mosering/",
   },
   {
