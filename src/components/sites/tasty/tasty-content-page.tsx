@@ -68,7 +68,7 @@ function GiftBoxesPage() {
   return <><PageIntro title="gift boxes" /><Breadcrumbs parts={[{ label: "gift boxes" }]} />
     <section className="tasty-article">
       <figure className="article-cover"><Image src="/sites/tasty/images/product-type-01.webp" alt="Cavopack red custom gift box" width={800} height={530} priority /></figure>
-      <div className="article-body"><p>Durable, elegant, and designed to protect treasured gifts.</p><a className="button" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer">Get Quote</a></div>
+      <div className="article-body"><p>Customizable rigid gift boxes with consistent quality for bulk orders.</p><a className="button" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer">Get Quote</a></div>
     </section>
   </>;
 }
