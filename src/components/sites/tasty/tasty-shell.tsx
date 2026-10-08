@@ -24,7 +24,7 @@ export function TastyHeader() {
     <nav className={`primary-nav${open ? " is-open" : ""}`} aria-label="Main navigation">
       <div className="nav-social"><span>Custom packaging for your brand</span></div>
       <button className="mobile-menu-toggle" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)}>{open ? <X size={22} /> : <Menu size={22} />}</button>
-      <div className="nav-links">{nav.map(([label, href, active]) => <Link key={label} className={active || label === "Contact" ? "active" : ""} href={href} onClick={() => setOpen(false)}>{label}</Link>)}</div>
+      <div className="nav-links">{nav.map(([label, href, active]) => <Link key={label} className={active || label === "Contact" ? "active" : ""} href={href} onClick={() => setOpen(false)}>{label}</Link>)}<a className="nav-whatsapp" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
     </nav>
   </header>;
 }
