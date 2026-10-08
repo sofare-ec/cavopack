@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useMemo, useState, type FormEvent, type ReactNode } from "react";
 import {
   Apple,
+  BookOpenCheck,
   Mail,
 } from "lucide-react";
 import { TastyFooter, TastyHeader } from "./tasty-shell";
@@ -114,7 +115,7 @@ export default function TastyHome() {
             <h1>Cavopack<br /><span className="hero-tagline">China-based Manufacturer of Luxury Gift Boxes and Paper Packaging</span></h1>
             <p className="hero-description"><span className="hero-description-products">Paper Bags, Packaging, Gift Boxes, Stickers, Labels, and Bakery Boxes</span><br /><span className="hero-description-process">Process: Sampling, Customization, and Quotation</span></p>
             <div className="hero-actions">
-              <a className="button" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer"><Image src="/sites/tasty/images/whatsapp.png" alt="" width={18} height={18} />Inquiry Now</a>
+              <Link className="button" href="#recipes"><BookOpenCheck size={18} fill="currentColor" />Cook Now</Link>
               <Link className="button button-outline" href="#recipes"><span className="cloche">♨</span>Explore Recipes</Link>
             </div>
           </div>
