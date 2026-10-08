@@ -22,6 +22,7 @@ type Recipe = {
 const heroSlides = [
   { src: "/sites/tasty/images/hero-pancakes.jpg", alt: "Woman carrying a Cavopack branded tote bag", width: 2750, height: 1500 },
   { src: "/sites/tasty/images/hero-gift-box.png", alt: "Woman presenting a red Cavopack gift box", width: 2816, height: 1536 },
+  { src: "/sites/tasty/images/hero-packaging-box.jpg", alt: "Cavopack kraft packaging box with a branded paper sleeve", width: 2688, height: 1500 },
 ];
 
 const recipes: Recipe[] = [
