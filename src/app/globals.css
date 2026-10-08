@@ -100,6 +100,7 @@ img { display: block; max-width: 100%; }
 .nav-links a:last-child { margin-left: auto; }
 .nav-links a { color: #c1c3c7; font-size: 15px; transition: color .2s; }
 .nav-links a:hover, .nav-links a.active { color: var(--orange); }
+.nav-links a[href="/contact/"], .nav-links a[href="/contact/"].active, .nav-links a[href="/contact/"]:hover { color: #fff; }
 .nav-links .nav-whatsapp { color: #25d366; }
 .nav-links .nav-whatsapp:hover { color: #25d366; }
 .button { min-height: 56px; padding: 0 24px; display: inline-flex; gap: 10px; justify-content: center; align-items: center; color: #fff; background: var(--orange); border: 2px solid var(--orange); border-radius: 11px; font-size: 15px; font-weight: 650; white-space: nowrap; cursor: pointer; transition: background .2s, border-color .2s, transform .2s, box-shadow .2s; }
