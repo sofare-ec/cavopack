@@ -43,7 +43,7 @@ const recipes: Recipe[] = [
     category: ["Pizzas"],
     categoryLabel: "TOTE BAG",
     image: "/sites/tasty/images/product-type-02.webp",
-    href: "/2021/04/16/topping-carrot-cake-jujubes-lemon-drops/",
+    href: "/tote-bag/",
   },
   {
     title: "Muffin Donut Soufflé Piebear Claw Croissant",
