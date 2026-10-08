@@ -81,6 +81,9 @@ const categories = [
   { title: "Salads", count: "3 articles", slug: "salads", image: "/sites/tasty/images/farhad-ibrahimzade-d-domdrwoaq-unsplash-800x530.jpg" },
   { title: "Deserts", count: "3 articles", slug: "deserts", image: "/sites/tasty/images/monika-grabkowska-p1aohbit-ey-unsplash.jpeg" },
   { title: "Soups", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
+  { title: "Soups", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
+  { title: "Soups", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
+  { title: "Soups", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
 ];
 
 const chefs = [
@@ -177,7 +180,7 @@ export default function TastyHome() {
 
       <section className="category-section section-shell" aria-labelledby="industry">
         <div className="section-heading"><h2 id="industry">Explore by Industry</h2><p>Fusce dignissim blandit justo, eget elementum risus tristique. Nunc lacus lacus, sit amet accumsan est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus.</p></div>
-        <div className="category-grid">{categories.map((category) => <Link className="category-card" href={`/category/${category.slug}/`} key={category.title} aria-label={`Browse ${category.title} recipes`}>
+        <div className="category-grid">{categories.map((category, index) => <Link className="category-card" href={`/category/${category.slug}/`} key={`${category.title}-${index}`} aria-label={`Browse ${category.title} recipes`}>
           <Image src={category.image} alt="" width={640} height={620} sizes="(max-width: 640px) 100vw, 25vw" />
           <span className="category-count">{category.count}</span><strong>{category.title}</strong>
         </Link>)}</div>
