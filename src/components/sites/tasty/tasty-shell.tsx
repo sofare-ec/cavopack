@@ -14,7 +14,7 @@ export function TastyHeader() {
   const productActive = pathname.startsWith("/recipes") || pathname.startsWith("/category/") || !!pathname.match(/^\/20\d\d\//);
   const nav = [
     ["Home", "/", pathname === "/"],
-    ["Products", "/#gift-boxes", !!productActive],
+    ["Products", "/#recipes", !!productActive],
     ["Industries", "/#category-title", pathname.startsWith("/industries/")],
     ["About", "/about/", pathname.startsWith("/about/")],
     ["Contact", "/contact/", pathname.startsWith("/contact/")],

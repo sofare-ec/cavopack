@@ -156,7 +156,7 @@ export default function TastyHome() {
           {visibleRecipes.map((recipe, index) => <article className="recipe-card" key={recipe.title}>
             <Link className="recipe-image" href={recipe.href}><Image src={recipe.image} alt={recipe.title} width={800} height={520} sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw" /></Link>
             <div className="recipe-content">
-              <div className="recipe-tags">{recipe.category.map((tag) => <Link id={recipe.categoryLabel ? "gift-boxes" : undefined} key={tag} href={`/category/${tag.toLowerCase()}/`}>{recipe.categoryLabel ?? tag}</Link>)}</div>
+              <div className="recipe-tags">{recipe.category.map((tag) => <Link key={tag} href={`/category/${tag.toLowerCase()}/`}>{recipe.categoryLabel ?? tag}</Link>)}</div>
               <h3><Link href={recipe.href}>{recipe.title}</Link></h3>
               <div className="recipe-byline"><a className="recipe-whatsapp" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer" aria-label="Request a packaging quote on WhatsApp"><Image src="/sites/tasty/images/whatsapp-logo.png" alt="WhatsApp" width={42} height={42} /></a><a className="recipe-quote" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer">Get Quote</a></div>
             </div>
