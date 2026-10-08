@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 import Image from "next/image";
-import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from "react";
 import {
   Apple,
   ChevronLeft,
@@ -101,6 +101,7 @@ export default function TastyHome() {
   const [subscribed, setSubscribed] = useState(false);
   const [heroSlide, setHeroSlide] = useState(0);
   const [carouselPaused, setCarouselPaused] = useState(false);
+  const touchStartX = useRef<number | null>(null);
 
   useEffect(() => {
     if (carouselPaused) return;
@@ -138,7 +139,7 @@ export default function TastyHome() {
               <Link className="button button-outline" href="/contact/"><Image src="/sites/tasty/images/email-quote.png" alt="" width={18} height={18} />Get Custom Quote</Link>
             </div>
           </div>
-          <div className="hero-photo-wrap" aria-roledescription="carousel" aria-label="Cavopack packaging photos" onMouseEnter={() => setCarouselPaused(true)} onMouseLeave={() => setCarouselPaused(false)} onFocusCapture={() => setCarouselPaused(true)} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setCarouselPaused(false); }}>
+          <div className="hero-photo-wrap" aria-roledescription="carousel" aria-label="Cavopack packaging photos" onPointerEnter={(event) => { if (event.pointerType === "mouse") setCarouselPaused(true); }} onPointerLeave={(event) => { if (event.pointerType === "mouse") setCarouselPaused(false); }} onTouchStart={(event) => { touchStartX.current = event.touches[0]?.clientX ?? null; }} onTouchEnd={(event) => { const startX = touchStartX.current; touchStartX.current = null; setCarouselPaused(false); const endX = event.changedTouches[0]?.clientX; if (startX === null || endX === undefined) return; const delta = endX - startX; if (Math.abs(delta) < 45) return; setHeroSlide((current) => (current + (delta < 0 ? 1 : -1) + heroSlides.length) % heroSlides.length); }} onTouchCancel={() => { touchStartX.current = null; setCarouselPaused(false); }} onFocusCapture={() => setCarouselPaused(true)} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setCarouselPaused(false); }}>
             <Image className="hero-photo" src={heroSlides[heroSlide].src} alt={heroSlides[heroSlide].alt} width={heroSlides[heroSlide].width} height={heroSlides[heroSlide].height} priority={heroSlide === 0} />
             <button className="hero-carousel-control hero-carousel-previous" type="button" aria-label="Previous image" onClick={() => setHeroSlide((current) => (current - 1 + heroSlides.length) % heroSlides.length)}><ChevronLeft size={22} /></button>
             <button className="hero-carousel-control hero-carousel-next" type="button" aria-label="Next image" onClick={() => setHeroSlide((current) => (current + 1) % heroSlides.length)}><ChevronRight size={22} /></button>

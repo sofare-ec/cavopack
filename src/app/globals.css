@@ -126,7 +126,7 @@ img { display: block; max-width: 100%; }
 .hero-description-products { font-size: 14px; white-space: nowrap; }
 .hero-description-process { font-size: 14px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
-.hero-photo-wrap { position: relative; width: 100%; height: 650px; border-radius: 20px; overflow: hidden; box-shadow: 0 18px 46px #482e1917; }
+.hero-photo-wrap { position: relative; width: 100%; height: 650px; border-radius: 20px; overflow: hidden; touch-action: pan-y; box-shadow: 0 18px 46px #482e1917; }
 .hero-photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 52% center; }
 .hero-carousel-control { position: absolute; top: 50%; z-index: 1; display: grid; width: 42px; height: 42px; padding: 0; place-items: center; border: 0; border-radius: 50%; color: #fff; background: #101113a8; cursor: pointer; transform: translateY(-50%); }
 .hero-carousel-previous { left: 16px; }
@@ -134,6 +134,7 @@ img { display: block; max-width: 100%; }
 .hero-carousel-dots { position: absolute; right: 0; bottom: 18px; left: 0; z-index: 1; display: flex; justify-content: center; gap: 8px; }
 .hero-carousel-dots button { width: 9px; height: 9px; padding: 0; border: 0; border-radius: 999px; background: #ffffff9c; cursor: pointer; }
 .hero-carousel-dots button.is-active { width: 22px; background: #fff; }
+@media (hover: none) and (pointer: coarse) { .hero-carousel-control { display: none; } }
 
 .section-shell { max-width: 1290px; margin: 0 auto; padding-left: 10px; padding-right: 10px; }
 .recipes-section { position: relative; padding-top: 115px; padding-bottom: 72px; }
