@@ -33,7 +33,7 @@ const recipes: Recipe[] = [
   {
     title: "Topping Marzipan Tart Cheesecake Sweet Lollipop",
     category: ["Aperitives"],
-    image: "/sites/tasty/images/ella-olsson-pb9afvr9-bk-unsplash-800x530.jpg",
+    image: "/sites/tasty/images/product-type-01.webp",
     href: "/2021/04/16/topping-marzipan-tart-cheesecake-sweet-lollipop/",
   },
   {
@@ -149,7 +149,7 @@ export default function TastyHome() {
       </section>
 
       <section className="recipes-section section-shell" id="recipes">
-        <SectionHeading title="Explore By Product Type">Start with the packaging type that best fits your project. Each type has its own page with material options, key details, and a direct inquiry route.</SectionHeading>
+        <SectionHeading title="Explore By Product Type">Start with the packaging type that best fits your project. Each type has its own page with material options and key details. Looking for more styles? Contact us to explore additional options and request a quote.</SectionHeading>
         <div className="recipe-grid">
           {visibleRecipes.map((recipe, index) => <article className="recipe-card" key={recipe.title}>
             <Link className="recipe-image" href={recipe.href}><Image src={recipe.image} alt={recipe.title} width={800} height={520} sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw" /></Link>
