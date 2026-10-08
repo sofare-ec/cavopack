@@ -81,7 +81,6 @@ img { display: block; max-width: 100%; }
 .floating-contact-whatsapp img { width: 40px; height: 40px; object-fit: contain; }
 .brand-row { height: 112px; max-width: 1290px; margin: 0 auto; padding: 0 10px; display: grid; grid-template-columns: 1fr auto; align-items: center; border-bottom: 1px solid var(--line); }
 .brand { display: flex; align-items: center; gap: 9px; font-size: 34px; line-height: 1; font-weight: 800; letter-spacing: -1.1px; }
-.brand-mark { width: 48px; height: 48px; flex: 0 0 auto; object-fit: contain; }
 .brand-qualifier { justify-self: end; align-self: end; margin-bottom: 39px; color: #d5d5d7; font-size: 16px; font-weight: 300; line-height: 1; }
 .icon-button { width: 42px; height: 42px; padding: 0; border: 0; background: transparent; color: #70747a; display: inline-grid; place-items: center; cursor: pointer; border-radius: 50%; transition: background .2s, color .2s; }
 .icon-button:hover { background: #fff2eb; color: var(--orange); }
@@ -276,8 +275,7 @@ img { display: block; max-width: 100%; }
   .floating-contact-whatsapp img { width: 35px; height: 35px; }
   .brand-row { height: auto; min-height: 76px; padding: 12px 19px; grid-template-columns: 1fr; justify-items: start; gap: 6px; }
   .brand { gap: 6px; font-size: 29px; }
-  .brand-mark { width: 37.5px; height: 37.5px; }
-  .brand-qualifier { justify-self: start; align-self: start; margin: 0 0 0 43.5px; font-size: 13px; }
+  .brand-qualifier { justify-self: start; align-self: start; margin: 0; font-size: 13px; }
   .icon-button { width: 37px; height: 37px; }
   .primary-nav { position: relative; min-height: 58px; padding: 0 18px; grid-template-columns: 1fr auto 1fr; background: #ef875d; border: 0; }
   .primary-nav::after { display: none; }
