@@ -49,7 +49,7 @@ const recipes: Recipe[] = [
     title: "Muffin Donut Soufflé Piebear Claw Croissant",
     category: ["Aperitives"],
     categoryLabel: "PACKAGING",
-    image: "/sites/tasty/images/ismael-trevino-3e8zzwjcfna-unsplash2-800x530.jpg",
+    image: "/sites/tasty/images/product-type-03.webp",
     href: "/2021/04/16/muffin-donut-souffle-piebear-claw-croissant/",
   },
   {
