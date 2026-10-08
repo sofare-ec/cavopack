@@ -70,7 +70,7 @@ const recipes: Recipe[] = [
     title: "Sweet roll chupa chups halvah muffin",
     category: ["Deserts", "Salads"],
     categoryLabel: "HANG TAG",
-    image: "/sites/tasty/images/dovile-ramoskaite-xx9smqqcbfy-unsplash-800x530.jpg",
+    image: "/sites/tasty/images/product-type-06.webp",
     href: "/hang-tag/",
   },
 ];
