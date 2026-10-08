@@ -34,9 +34,9 @@ const recipes: Recipe[] = [
   {
     title: "Durable, elegant, and designed to protect treasured gifts.",
     category: ["Aperitives"],
-    categoryLabel: "GIFT BOXES",
+    categoryLabel: "gift boxes",
     image: "/sites/tasty/images/product-type-01.webp",
-    href: "/GIFT-BOXES/",
+    href: "/gift-boxes/",
   },
   {
     title: "Topping Carrot Cake Jujubes Lemon Drops",

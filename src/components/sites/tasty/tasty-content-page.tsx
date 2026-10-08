@@ -65,7 +65,7 @@ function IndustriesPage() {
 }
 
 function GiftBoxesPage() {
-  return <><PageIntro title="GIFT BOXES" /><Breadcrumbs parts={[{ label: "GIFT BOXES" }]} />
+  return <><PageIntro title="gift boxes" /><Breadcrumbs parts={[{ label: "gift boxes" }]} />
     <section className="tasty-article">
       <figure className="article-cover"><Image src="/sites/tasty/images/product-type-01.webp" alt="Cavopack red custom gift box" width={800} height={530} priority /></figure>
       <div className="article-body"><p>Durable, elegant, and designed to protect treasured gifts.</p><a className="button" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer">Get Quote</a></div>
@@ -93,7 +93,7 @@ export default function TastyContentPage({ slug }: { slug: string[] }) {
   else if (path === "about") content = <AboutPage />;
   else if (path === "industries") content = <IndustriesPage />;
   else if (path === "contact") content = <ContactPage />;
-  else if (path === "GIFT-BOXES") content = <GiftBoxesPage />;
+  else if (path === "gift-boxes") content = <GiftBoxesPage />;
   else if (path === "author/admin_tasty") content = <ArchivePage title="Articles by Amie" items={tastyRecipes} />;
   else if (slug[0] === "category" && slug.length === 2 && categorySlugs.includes(slug[1] as typeof categorySlugs[number])) {
     const category = slug[1];

@@ -7,7 +7,7 @@ const fixedRoutes = [
   "about",
   "industries",
   "contact",
-  "GIFT-BOXES",
+  "gift-boxes",
   "author/admin_tasty",
   "category/aperitives",
   "category/pizzas",

@@ -27,7 +27,7 @@ export const tastyRecipes: TastyRecipe[] = [
   { slug: "hello-world", title: "Slow Cooker Beef Bourguignon", category: ["Deserts"], image: "/sites/tasty/images/madie-hamilton-dz-hi4euwca-unsplash.jpg", date: "April 13, 2021", excerpt: "A slow cooker take on beef bourguignon, with tender beef and vegetables in a rich sauce.", course: "Uncategorized", cuisine: "French", difficulty: "Medium", ingredients: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Mattis vulputate enim nulla aliquet.", "Turpis egestas integer eget aliquet nibh", "Tincidunt id aliquet risus feugiat in."], directions: ["Orci ac auctor augue mauris augue", "Augue interdum velit euismod in pellentesque", "Massa placerat duis ultricies lacus", "Magna etiam tempor orci eu lobortis"] },
 ];
 
-export const recipeHref = (recipe: TastyRecipe) => recipe.slug === "gift-boxes" ? "/GIFT-BOXES/" : post(recipe.date.includes("13") ? "2021/04/13" : recipe.date.includes("14") ? "2021/04/14" : "2021/04/16", recipe.slug);
+export const recipeHref = (recipe: TastyRecipe) => recipe.slug === "gift-boxes" ? "/gift-boxes/" : post(recipe.date.includes("13") ? "2021/04/13" : recipe.date.includes("14") ? "2021/04/14" : "2021/04/16", recipe.slug);
 
 export const categorySlugs = ["aperitives", "pizzas", "salads", "deserts", "soups"] as const;
 export const categoryTitle = (slug: string) => ({ aperitives: "Aperitives", pizzas: "Pizzas", salads: "Salads", deserts: "Deserts", soups: "Soups" }[slug as typeof categorySlugs[number]] ?? slug);
