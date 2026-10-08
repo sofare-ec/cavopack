@@ -32,7 +32,7 @@ const heroSlides = [
 
 const recipes: Recipe[] = [
   {
-    title: "Topping Marzipan Tart Cheesecake Sweet Lollipop",
+    title: "Durable, elegant, and designed to protect treasured gifts.",
     category: ["Aperitives"],
     categoryLabel: "GIFT BOXES",
     image: "/sites/tasty/images/product-type-01.webp",
