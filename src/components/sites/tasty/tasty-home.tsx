@@ -24,7 +24,7 @@ const heroSlides = [
   { src: "/sites/tasty/images/hero-cavopack-design-shopping-bag.webp", alt: "Cavopack design shopping bag against a red background", width: 1500, height: 1500 },
   { src: "/sites/tasty/images/hero-canvas-tote-bag.webp", alt: "Woman carrying a beige canvas tote bag", width: 1500, height: 1500 },
   { src: "/sites/tasty/images/hero-cavopack-kraft-gift-box.webp", alt: "Woman holding a Cavopack kraft gift box", width: 1500, height: 1500 },
-  { src: "/sites/tasty/images/hero-kraft-package-sealing.webp", alt: "Hands sealing a Cavopack kraft package with a branded paper band", width: 1500, height: 1500 },
+  { src: "/sites/tasty/images/hero-cupcake-bakery-box.webp", alt: "Hand holding a yellow bakery box with cupcakes", width: 1500, height: 1500 },
   { src: "/sites/tasty/images/hero-cavopack-hang-tags.webp", alt: "Cavopack paper hang tags on a garment", width: 1500, height: 1500 },
   { src: "/sites/tasty/images/hero-canvas-tote-bag.webp", alt: "Woman carrying a beige canvas tote bag", width: 1500, height: 1500 },
 ];
