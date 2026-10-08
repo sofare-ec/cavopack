@@ -41,7 +41,7 @@ const recipes: Recipe[] = [
   {
     title: "Topping Carrot Cake Jujubes Lemon Drops",
     category: ["Pizzas"],
-    image: "/sites/tasty/images/likemeat-cbnauxsztfo-unsplash-800x530.jpg",
+    image: "/sites/tasty/images/product-type-02.webp",
     href: "/2021/04/16/topping-carrot-cake-jujubes-lemon-drops/",
   },
   {
