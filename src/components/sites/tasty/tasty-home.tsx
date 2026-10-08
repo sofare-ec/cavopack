@@ -50,28 +50,28 @@ const recipes: Recipe[] = [
     category: ["Aperitives"],
     categoryLabel: "PACKAGING",
     image: "/sites/tasty/images/product-type-03.webp",
-    href: "/2021/04/16/muffin-donut-souffle-piebear-claw-croissant/",
+    href: "/packaging/",
   },
   {
     title: "Bearclaw Dragée Sweet Rolloat Mosering",
     category: ["Salads"],
     categoryLabel: "BRKERY BOXES",
     image: "/sites/tasty/images/product-type-04.png",
-    href: "/2021/04/16/bearclaw-dragee-sweet-rolloat-mosering/",
+    href: "/brkery-boxes/",
   },
   {
     title: "Gingerbread Donut Bear Claw Powder",
     category: ["Aperitives"],
     categoryLabel: "STICKERS",
     image: "/sites/tasty/images/product-type-05.webp",
-    href: "/2021/04/16/gingerbread-donut-bear-claw/",
+    href: "/stickers/",
   },
   {
     title: "Sweet roll chupa chups halvah muffin",
     category: ["Deserts", "Salads"],
     categoryLabel: "HANG TAG",
     image: "/sites/tasty/images/dovile-ramoskaite-xx9smqqcbfy-unsplash-800x530.jpg",
-    href: "/2021/04/16/sweet-roll-chupa-chups-halvah-muffin/",
+    href: "/hang-tag/",
   },
 ];
 

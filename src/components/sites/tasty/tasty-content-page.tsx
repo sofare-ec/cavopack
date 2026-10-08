@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { TastyShell } from "./tasty-shell";
-import { categorySlugs, categoryTitle, recipeHref, tastyRecipes, type TastyRecipe } from "./tasty-data";
+import { categorySlugs, categoryTitle, productRouteSlugs, recipeHref, tastyRecipes, type TastyRecipe } from "./tasty-data";
 import { LocalPreviewForm, PrintRecipeButton } from "./tasty-preview-form";
 
 const excerptText = "Integer at faucibus urna. Nullam condimentum leo id elit sagittis auctor. Curabitur elementum nunc a leo imperdiet, nec elementum diam elementum.";
@@ -99,7 +99,7 @@ export default function TastyContentPage({ slug }: { slug: string[] }) {
     const category = slug[1];
     content = <ArchivePage title={`Category ${categoryTitle(category)}`} items={tastyRecipes.filter((recipe) => recipe.category.some((tag) => tag.toLowerCase() === category))} />;
   } else {
-    const recipe = tastyRecipes.find((item) => item.slug === slug.at(-1));
+    const recipe = tastyRecipes.find((item) => item.slug === slug.at(-1) || productRouteSlugs[item.slug] === path);
     content = recipe ? <RecipeArticle recipe={recipe} /> : <NotFoundPage />;
   }
   return <TastyShell>{content}</TastyShell>;

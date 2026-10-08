@@ -14,6 +14,13 @@ export type TastyRecipe = {
 
 const post = (date: string, slug: string) => `/${date}/${slug}/`;
 
+export const productRouteSlugs: Record<string, string> = {
+  "muffin-donut-souffle-piebear-claw-croissant": "packaging",
+  "bearclaw-dragee-sweet-rolloat-mosering": "brkery-boxes",
+  "gingerbread-donut-bear-claw": "stickers",
+  "sweet-roll-chupa-chups-halvah-muffin": "hang-tag",
+};
+
 export const tastyRecipes: TastyRecipe[] = [
   { slug: "gift-boxes", title: "Customizable rigid gift boxes with consistent quality for bulk orders.", category: ["Aperitives"], image: "/sites/tasty/images/product-type-01.webp", date: "April 16, 2021", excerpt: "Customizable rigid gift boxes with consistent quality for bulk orders.", course: "Packaging", cuisine: "Custom", difficulty: "Custom", ingredients: [], directions: [] },
   { slug: "tote-bag", title: "Custom-branded tote bags with consistent quality for bulk orders.", category: ["Pizzas"], image: "/sites/tasty/images/product-type-02.webp", date: "April 16, 2021", excerpt: "Custom-branded tote bags with consistent quality for bulk orders.", course: "Pizzas", cuisine: "Italian", difficulty: "Medium", ingredients: ["Topping marzipan tart cheesecake sweet", "Powder sesame snaps powder sesame", "Croissant caramels candy canes fruitcake", "Sugar plum croissant cake cotton"], directions: ["Candy tart sesame snaps soufflé tart", "Gingerbread tootsie roll jujubes sweet roll", "Biscuit ice cream candy canes powder", "Gingerbread gingerbread lemon drops"] },
@@ -27,7 +34,7 @@ export const tastyRecipes: TastyRecipe[] = [
   { slug: "hello-world", title: "Slow Cooker Beef Bourguignon", category: ["Deserts"], image: "/sites/tasty/images/madie-hamilton-dz-hi4euwca-unsplash.jpg", date: "April 13, 2021", excerpt: "A slow cooker take on beef bourguignon, with tender beef and vegetables in a rich sauce.", course: "Uncategorized", cuisine: "French", difficulty: "Medium", ingredients: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Mattis vulputate enim nulla aliquet.", "Turpis egestas integer eget aliquet nibh", "Tincidunt id aliquet risus feugiat in."], directions: ["Orci ac auctor augue mauris augue", "Augue interdum velit euismod in pellentesque", "Massa placerat duis ultricies lacus", "Magna etiam tempor orci eu lobortis"] },
 ];
 
-export const recipeHref = (recipe: TastyRecipe) => recipe.slug === "gift-boxes" || recipe.slug === "tote-bag" ? `/${recipe.slug}/` : post(recipe.date.includes("13") ? "2021/04/13" : recipe.date.includes("14") ? "2021/04/14" : "2021/04/16", recipe.slug);
+export const recipeHref = (recipe: TastyRecipe) => productRouteSlugs[recipe.slug] ? `/${productRouteSlugs[recipe.slug]}/` : recipe.slug === "gift-boxes" || recipe.slug === "tote-bag" ? `/${recipe.slug}/` : post(recipe.date.includes("13") ? "2021/04/13" : recipe.date.includes("14") ? "2021/04/14" : "2021/04/16", recipe.slug);
 
 export const categorySlugs = ["aperitives", "pizzas", "salads", "deserts", "soups"] as const;
 export const categoryTitle = (slug: string) => ({ aperitives: "Aperitives", pizzas: "Pizzas", salads: "Salads", deserts: "Deserts", soups: "Soups" }[slug as typeof categorySlugs[number]] ?? slug);

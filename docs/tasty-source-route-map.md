@@ -24,10 +24,10 @@ This map records the internal pages found while following the source site's menu
 
 - `/2021/04/16/topping-marzipan-tart-cheesecake-sweet-lollipop/`
 - `/2021/04/16/topping-carrot-cake-jujubes-lemon-drops/`
-- `/2021/04/16/muffin-donut-souffle-piebear-claw-croissant/`
-- `/2021/04/16/bearclaw-dragee-sweet-rolloat-mosering/`
-- `/2021/04/16/gingerbread-donut-bear-claw/`
-- `/2021/04/16/sweet-roll-chupa-chups-halvah-muffin/`
+- `/packaging/`
+- `/brkery-boxes/`
+- `/stickers/`
+- `/hang-tag/`
 - `/2021/04/16/tootsie-donut-fruitcake-gummies/`
 - `/2021/04/14/blueberry-buttermilk-pancakes/`
 - `/2021/04/14/fennel-slaw-with-mint-vinaigrette/`
