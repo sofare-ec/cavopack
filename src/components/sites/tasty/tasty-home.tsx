@@ -115,7 +115,7 @@ export default function TastyHome() {
             <p className="hero-description"><span className="hero-description-products">Paper Bags, Packaging, Gift Boxes, Stickers, Labels, and Bakery Boxes</span><br /><span className="hero-description-process">Process: Sampling, Customization, and Quotation</span></p>
             <div className="hero-actions">
               <a className="button" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer"><Image src="/sites/tasty/images/whatsapp.png" alt="" width={18} height={18} />Inquiry Now</a>
-              <Link className="button button-outline" href="#recipes"><span className="cloche">♨</span>Explore Recipes</Link>
+              <Link className="button button-outline" href="/contact/"><Image src="/sites/tasty/images/email-quote.png" alt="" width={18} height={18} />Get Custom Quote</Link>
             </div>
           </div>
           <div className="hero-photo-wrap"><Image className="hero-photo" src="/sites/tasty/images/hero-pancakes.jpg" alt="Golden pancakes with maple syrup" width={720} height={900} priority /></div>
