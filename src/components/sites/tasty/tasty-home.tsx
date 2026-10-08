@@ -39,7 +39,7 @@ const recipes: Recipe[] = [
     href: "/gift-boxes/",
   },
   {
-    title: "Custom-branded tote bags with consistent quality for bulk orders",
+    title: "Custom-branded tote bags with consistent quality for bulk orders.",
     category: ["Pizzas"],
     categoryLabel: "TOTE BAG",
     image: "/sites/tasty/images/product-type-02.webp",
