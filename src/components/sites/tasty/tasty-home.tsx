@@ -155,7 +155,7 @@ export default function TastyHome() {
         </div>
       </section>
 
-      <section className="recipes-section section-shell" id="recipes">
+      <section className="recipes-section section-shell" id="products">
         <SectionHeading title="Explore By Product Type">Start with the packaging type that best fits your project. Each type has its own page with material options and key details. Looking for more styles? Contact us to explore additional options and request a quote.</SectionHeading>
         <div className="recipe-grid">
           {visibleRecipes.map((recipe, index) => <article className="recipe-card" key={recipe.title}>
@@ -175,8 +175,8 @@ export default function TastyHome() {
         </div>
       </section>
 
-      <section className="category-section section-shell" aria-labelledby="category-title">
-        <div className="section-heading"><h2 id="category-title">Explore by Industry</h2><p>Fusce dignissim blandit justo, eget elementum risus tristique. Nunc lacus lacus, sit amet accumsan est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus.</p></div>
+      <section className="category-section section-shell" aria-labelledby="industry">
+        <div className="section-heading"><h2 id="industry">Explore by Industry</h2><p>Fusce dignissim blandit justo, eget elementum risus tristique. Nunc lacus lacus, sit amet accumsan est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus.</p></div>
         <div className="category-grid">{categories.map((category) => <Link className="category-card" href={`/category/${category.slug}/`} key={category.title} aria-label={`Browse ${category.title} recipes`}>
           <Image src={category.image} alt="" width={640} height={620} sizes="(max-width: 640px) 100vw, 25vw" />
           <span className="category-count">{category.count}</span><strong>{category.title}</strong>
