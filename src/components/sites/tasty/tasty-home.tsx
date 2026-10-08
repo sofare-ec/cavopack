@@ -25,7 +25,7 @@ const heroSlides = [
   { src: "/sites/tasty/images/hero-packaging-box.jpg", alt: "Hand holding a yellow bakery box with cupcakes", width: 1000, height: 1000 },
   { src: "/sites/tasty/images/hero-package-sealing.jpg", alt: "Woman holding a Cavopack kraft gift box", width: 1000, height: 1000 },
   { src: "/sites/tasty/images/hero-cavopack-tags.jpg", alt: "Hands sealing a Cavopack kraft package with a branded paper band", width: 1000, height: 1000 },
-  { src: "/sites/tasty/images/hero-cavopack-shopping-bag.jpg", alt: "Cavopack branded shopping bag against a red background", width: 2665, height: 1500 },
+  { src: "/sites/tasty/images/hero-cavopack-shopping-bag.jpg", alt: "Cavopack paper hang tags on a garment", width: 1000, height: 1000 },
 ];
 
 const recipes: Recipe[] = [
