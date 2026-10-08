@@ -171,7 +171,7 @@ export default function TastyHome() {
       </section>
 
       <section className="category-section section-shell" aria-labelledby="category-title">
-        <div className="section-heading"><h2 id="category-title">Recipes By Category</h2><p>Fusce dignissim blandit justo, eget elementum risus tristique. Nunc lacus lacus, sit amet accumsan est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus.</p></div>
+        <div className="section-heading"><h2 id="category-title">Explore by Industry</h2><p>Fusce dignissim blandit justo, eget elementum risus tristique. Nunc lacus lacus, sit amet accumsan est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus.</p></div>
         <div className="category-grid">{categories.map((category) => <Link className="category-card" href={`/category/${category.slug}/`} key={category.title} aria-label={`Browse ${category.title} recipes`}>
           <Image src={category.image} alt="" width={640} height={620} sizes="(max-width: 640px) 100vw, 25vw" />
           <span className="category-count">{category.count}</span><strong>{category.title}</strong>
