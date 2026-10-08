@@ -148,7 +148,7 @@ export default function TastyHome() {
       </section>
 
       <section className="recipes-section section-shell" id="recipes">
-        <SectionHeading title="Recipes of the Week">Fusce dignissim blandit justo, eget elementum risus tristique. Nunc lacus lacus, sit amet accumsan est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus.</SectionHeading>
+        <SectionHeading title="Explore By Product Type">Fusce dignissim blandit justo, eget elementum risus tristique. Nunc lacus lacus, sit amet accumsan est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus.</SectionHeading>
         <div className="recipe-grid">
           {visibleRecipes.map((recipe, index) => <article className="recipe-card" key={recipe.title}>
             <Link className="recipe-image" href={recipe.href}><Image src={recipe.image} alt={recipe.title} width={800} height={520} sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw" /></Link>
