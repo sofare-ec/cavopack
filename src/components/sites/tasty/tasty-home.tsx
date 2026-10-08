@@ -118,7 +118,7 @@ export default function TastyHome() {
               <Link className="button button-outline" href="/contact/"><Image src="/sites/tasty/images/email-quote.png" alt="" width={18} height={18} />Get Custom Quote</Link>
             </div>
           </div>
-          <div className="hero-photo-wrap"><Image className="hero-photo" src="/sites/tasty/images/hero-pancakes.jpg" alt="Golden pancakes with maple syrup" width={720} height={900} priority /></div>
+          <div className="hero-photo-wrap"><Image className="hero-photo" src="/sites/tasty/images/hero-pancakes.jpg" alt="Woman carrying a Cavopack branded tote bag" width={2750} height={1500} priority /></div>
         </div>
       </section>
 
