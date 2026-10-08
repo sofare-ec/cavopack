@@ -64,6 +64,15 @@ function IndustriesPage() {
   </>;
 }
 
+function GiftBoxesPage() {
+  return <><PageIntro title="GIFT BOXES" /><Breadcrumbs parts={[{ label: "GIFT BOXES" }]} />
+    <section className="tasty-article">
+      <figure className="article-cover"><Image src="/sites/tasty/images/product-type-01.webp" alt="Cavopack red custom gift box" width={800} height={530} priority /></figure>
+      <div className="article-body"><p>Durable, elegant, and designed to protect treasured gifts.</p><a className="button" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer">Get Quote</a></div>
+    </section>
+  </>;
+}
+
 function ContactPage() {
   return <><PageIntro title="Contact">{excerptText}</PageIntro><Breadcrumbs parts={[{ label: "Contact" }]} />
     <section className="tasty-contact tasty-section"><div className="contact-details"><article><h2>Physical Address</h2><p>304 North Cardinal St.<br />Dorchester Center, MA 02124</p></article><article><h2>Email Address</h2><p>info@company.com<br />contact@company.com</p></article><article><h2>Phone Numbers</h2><p>1-555-123-4567<br />1-800-123-4567</p></article><p className="template-note">These address and phone details are sample content from the original demo page, not verified Cavopack contact details.</p></div>
@@ -84,6 +93,7 @@ export default function TastyContentPage({ slug }: { slug: string[] }) {
   else if (path === "about") content = <AboutPage />;
   else if (path === "industries") content = <IndustriesPage />;
   else if (path === "contact") content = <ContactPage />;
+  else if (path === "GIFT BOXES") content = <GiftBoxesPage />;
   else if (path === "author/admin_tasty") content = <ArchivePage title="Articles by Amie" items={tastyRecipes} />;
   else if (slug[0] === "category" && slug.length === 2 && categorySlugs.includes(slug[1] as typeof categorySlugs[number])) {
     const category = slug[1];

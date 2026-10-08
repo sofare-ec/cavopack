@@ -36,7 +36,7 @@ const recipes: Recipe[] = [
     category: ["Aperitives"],
     categoryLabel: "GIFT BOXES",
     image: "/sites/tasty/images/product-type-01.webp",
-    href: "/2021/04/16/topping-marzipan-tart-cheesecake-sweet-lollipop/",
+    href: "/GIFT%20BOXES/",
   },
   {
     title: "Topping Carrot Cake Jujubes Lemon Drops",
