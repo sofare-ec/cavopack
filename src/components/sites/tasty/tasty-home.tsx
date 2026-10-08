@@ -3,9 +3,11 @@
 import Link from "next/link";
 
 import Image from "next/image";
-import { useMemo, useState, type FormEvent, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from "react";
 import {
   Apple,
+  ChevronLeft,
+  ChevronRight,
   Mail,
 } from "lucide-react";
 import { TastyFooter, TastyHeader } from "./tasty-shell";
@@ -16,6 +18,11 @@ type Recipe = {
   image: string;
   href: string;
 };
+
+const heroSlides = [
+  { src: "/sites/tasty/images/hero-pancakes.jpg", alt: "Woman carrying a Cavopack branded tote bag", width: 2750, height: 1500 },
+  { src: "/sites/tasty/images/hero-gift-box.png", alt: "Woman presenting a red Cavopack gift box", width: 2816, height: 1536 },
+];
 
 const recipes: Recipe[] = [
   {
@@ -87,6 +94,14 @@ export default function TastyHome() {
   const [query, setQuery] = useState("");
   const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
   const [subscribed, setSubscribed] = useState(false);
+  const [heroSlide, setHeroSlide] = useState(0);
+  const [carouselPaused, setCarouselPaused] = useState(false);
+
+  useEffect(() => {
+    if (carouselPaused) return;
+    const timer = window.setInterval(() => setHeroSlide((current) => (current + 1) % heroSlides.length), 5000);
+    return () => window.clearInterval(timer);
+  }, [carouselPaused]);
 
   const visibleRecipes = useMemo(() => {
     const term = query.trim().toLowerCase();
@@ -118,7 +133,12 @@ export default function TastyHome() {
               <Link className="button button-outline" href="/contact/"><Image src="/sites/tasty/images/email-quote.png" alt="" width={18} height={18} />Get Custom Quote</Link>
             </div>
           </div>
-          <div className="hero-photo-wrap"><Image className="hero-photo" src="/sites/tasty/images/hero-pancakes.jpg" alt="Woman carrying a Cavopack branded tote bag" width={2750} height={1500} priority /></div>
+          <div className="hero-photo-wrap" aria-roledescription="carousel" aria-label="Cavopack packaging photos" onMouseEnter={() => setCarouselPaused(true)} onMouseLeave={() => setCarouselPaused(false)} onFocusCapture={() => setCarouselPaused(true)} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setCarouselPaused(false); }}>
+            <Image className="hero-photo" src={heroSlides[heroSlide].src} alt={heroSlides[heroSlide].alt} width={heroSlides[heroSlide].width} height={heroSlides[heroSlide].height} priority={heroSlide === 0} />
+            <button className="hero-carousel-control hero-carousel-previous" type="button" aria-label="Previous image" onClick={() => setHeroSlide((current) => (current - 1 + heroSlides.length) % heroSlides.length)}><ChevronLeft size={22} /></button>
+            <button className="hero-carousel-control hero-carousel-next" type="button" aria-label="Next image" onClick={() => setHeroSlide((current) => (current + 1) % heroSlides.length)}><ChevronRight size={22} /></button>
+            <div className="hero-carousel-dots" aria-label="Choose image">{heroSlides.map((slide, index) => <button key={slide.src} className={index === heroSlide ? "is-active" : ""} type="button" aria-label={`Show image ${index + 1}`} aria-current={index === heroSlide ? "true" : undefined} onClick={() => setHeroSlide(index)} />)}</div>
+          </div>
         </div>
       </section>
 
