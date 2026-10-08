@@ -20,7 +20,7 @@ type Recipe = {
 };
 
 const heroSlides = [
-  { src: "/sites/tasty/images/hero-pancakes.jpg", alt: "Woman carrying a Cavopack branded tote bag", width: 720, height: 650 },
+  { src: "/sites/tasty/images/hero-pancakes.jpg", alt: "Woman presenting a red Cavopack gift box", width: 720, height: 650 },
   { src: "/sites/tasty/images/hero-gift-box.png", alt: "Woman presenting a red Cavopack gift box", width: 2816, height: 1536 },
   { src: "/sites/tasty/images/hero-packaging-box.jpg", alt: "Cavopack kraft packaging box with a branded paper sleeve", width: 2688, height: 1500 },
   { src: "/sites/tasty/images/hero-package-sealing.jpg", alt: "Hands sealing a Cavopack kraft package with a branded paper band", width: 2688, height: 1500 },
