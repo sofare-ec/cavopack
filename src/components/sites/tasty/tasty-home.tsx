@@ -156,7 +156,7 @@ export default function TastyHome() {
             <div className="recipe-content">
               <div className="recipe-tags">{recipe.category.map((tag) => <Link key={tag} href={`/category/${tag.toLowerCase()}/`}>{tag}</Link>)}</div>
               <h3><Link href={recipe.href}>{recipe.title}</Link></h3>
-              <div className="recipe-byline"><Image src="/sites/tasty/images/autor-1-150x150.png" alt="Amie" width={42} height={42} /><span>Amie</span><i /> <span>April 16, 2021</span></div>
+              <div className="recipe-byline"><a className="recipe-whatsapp" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer" aria-label="Request a packaging quote on WhatsApp"><Image src="/sites/tasty/images/whatsapp-logo.png" alt="WhatsApp" width={42} height={42} /></a><span>Amie</span><i /> <span>April 16, 2021</span></div>
             </div>
             {index === 0 && query && <span className="sr-only">First search result</span>}
           </article>)}
