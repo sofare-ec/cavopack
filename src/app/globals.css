@@ -156,6 +156,8 @@ img { display: block; max-width: 100%; }
 .recipe-content h3 a:hover { color: var(--orange-dark); }
 .recipe-byline { margin-top: auto; display: flex; align-items: center; gap: 8px; color: #b7bac0; font-size: 11px; font-weight: 600; letter-spacing: .3px; text-transform: uppercase; }
 .recipe-byline img { width: 39px; height: 39px; margin-right: 1px; object-fit: cover; object-position: center 25%; border-radius: 50%; }
+.recipe-byline .recipe-whatsapp { flex: 0 0 39px; width: 39px; height: 39px; display: grid; place-items: center; }
+.recipe-byline .recipe-whatsapp img { width: 70%; height: 70%; margin: 0; object-fit: contain; object-position: center; border-radius: 0; }
 .recipe-byline .recipe-quote { color: inherit; text-transform: none; }
 .recipe-byline i { width: 4px; height: 4px; border-radius: 50%; background: var(--orange); }
 .recipe-actions { margin-top: 72px; display: flex; justify-content: center; align-items: center; gap: 20px; }
