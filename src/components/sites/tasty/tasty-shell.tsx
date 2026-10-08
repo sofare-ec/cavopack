@@ -15,7 +15,7 @@ export function TastyHeader() {
   const nav = [
     ["Home", "/", pathname === "/"],
     ["Products", "/#recipes", !!productActive],
-    ["Industries", "/industries/", pathname.startsWith("/industries/")],
+    ["Industries", "/#category-title", pathname.startsWith("/industries/")],
     ["About", "/about/", pathname.startsWith("/about/")],
     ["Contact", "/contact/", pathname.startsWith("/contact/")],
   ] as const;
