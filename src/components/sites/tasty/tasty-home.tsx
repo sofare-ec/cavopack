@@ -36,7 +36,7 @@ const recipes: Recipe[] = [
     category: ["Aperitives"],
     categoryLabel: "GIFT BOXES",
     image: "/sites/tasty/images/product-type-01.webp",
-    href: "/GIFT%20BOXES/",
+    href: "/GIFT-BOXES/",
   },
   {
     title: "Topping Carrot Cake Jujubes Lemon Drops",

@@ -7,7 +7,7 @@ const fixedRoutes = [
   "about",
   "industries",
   "contact",
-  "GIFT BOXES",
+  "GIFT-BOXES",
   "author/admin_tasty",
   "category/aperitives",
   "category/pizzas",
@@ -16,7 +16,7 @@ const fixedRoutes = [
   "category/soups",
 ];
 
-const recipeRoutes = tastyRecipes.map((recipe) => {
+const recipeRoutes = tastyRecipes.filter((recipe) => recipe.slug !== "gift-boxes").map((recipe) => {
   const day = recipe.date.includes("13") ? "13" : recipe.date.includes("14") ? "14" : "16";
   return `2021/04/${day}/${recipe.slug}`;
 });

@@ -93,7 +93,7 @@ export default function TastyContentPage({ slug }: { slug: string[] }) {
   else if (path === "about") content = <AboutPage />;
   else if (path === "industries") content = <IndustriesPage />;
   else if (path === "contact") content = <ContactPage />;
-  else if (path === "GIFT BOXES") content = <GiftBoxesPage />;
+  else if (path === "GIFT-BOXES") content = <GiftBoxesPage />;
   else if (path === "author/admin_tasty") content = <ArchivePage title="Articles by Amie" items={tastyRecipes} />;
   else if (slug[0] === "category" && slug.length === 2 && categorySlugs.includes(slug[1] as typeof categorySlugs[number])) {
     const category = slug[1];
