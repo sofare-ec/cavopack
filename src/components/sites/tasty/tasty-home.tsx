@@ -39,8 +39,9 @@ const recipes: Recipe[] = [
     href: "/gift-boxes/",
   },
   {
-    title: "Topping Carrot Cake Jujubes Lemon Drops",
+    title: "Custom-branded tote bags with consistent quality for bulk orders",
     category: ["Pizzas"],
+    categoryLabel: "TOTE BAG",
     image: "/sites/tasty/images/product-type-02.webp",
     href: "/2021/04/16/topping-carrot-cake-jujubes-lemon-drops/",
   },
