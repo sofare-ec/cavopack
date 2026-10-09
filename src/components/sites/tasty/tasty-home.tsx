@@ -53,7 +53,7 @@ const recipes: Recipe[] = [
     href: "/packaging/",
   },
   {
-    title: "Bearclaw Dragée Sweet Rolloat Mosering",
+    title: "Custom bakery boxes with secure closures, convenient handles, and standout branding.",
     category: ["Salads"],
     categoryLabel: "BRKERY BOXES",
     image: "/sites/tasty/images/product-type-04.webp",
