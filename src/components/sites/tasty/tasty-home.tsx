@@ -56,7 +56,7 @@ const recipes: Recipe[] = [
     title: "Bearclaw Dragée Sweet Rolloat Mosering",
     category: ["Salads"],
     categoryLabel: "BRKERY BOXES",
-    image: "/sites/tasty/images/product-type-04.png",
+    image: "/sites/tasty/images/product-type-04.webp",
     href: "/brkery-boxes/",
   },
   {
