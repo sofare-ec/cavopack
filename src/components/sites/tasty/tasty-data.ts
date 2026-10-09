@@ -50,4 +50,3 @@ export const industries = [
   { title: "Gift shop", slug: "gift-shop", image: "/sites/tasty/images/industry/gift-shop.webp" },
 ];
 
-export const trending = [tastyRecipes[9], tastyRecipes[0], tastyRecipes[8], tastyRecipes[7]];

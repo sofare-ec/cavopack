@@ -2,11 +2,9 @@
 
 import Link from "next/link";
 
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, type ReactNode } from "react";
 import { Menu, X } from "lucide-react";
-import { trending, recipeHref } from "./tasty-data";
 
 export function TastyHeader() {
   const pathname = usePathname();
@@ -39,9 +37,6 @@ export function TastyHeader() {
 
 export function TastyFooter() {
   return <>
-    <section className="trending-strip" aria-label="Trending recipes"><div className="trending-title"><span>Trending now</span></div>
-      <div className="trending-list">{trending.map((recipe) => <Link className="trending-item" href={recipeHref(recipe)} key={recipe.slug}><Image src={recipe.image} alt="" width={70} height={70} /><span>{recipe.title}</span></Link>)}</div>
-    </section>
     <footer className="site-footer" id="footer"><div className="footer-columns">
       <div><h3>Cavopack</h3><Link href="/">Introduction</Link><Link href="/recipes/">Products</Link><Link href="/about/">About us</Link></div>
       <div><h3>Useful Links</h3><Link href="/recipes/">All products</Link><Link href="/category/aperitives/">Aperitives</Link><Link href="/category/pizzas/">Pizzas</Link><Link href="/category/salads/">Salads</Link><Link href="/category/deserts/">Deserts</Link><Link href="/category/soups/">Soups</Link></div>
