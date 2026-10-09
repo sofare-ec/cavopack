@@ -67,7 +67,7 @@ const recipes: Recipe[] = [
     href: "/stickers/",
   },
   {
-    title: "Sweet roll chupa chups halvah muffin",
+    title: "Custom hang tags add polished branding and clear product information to packaging.",
     category: ["Deserts", "Salads"],
     categoryLabel: "HANG TAG",
     image: "/sites/tasty/images/product-type-06.webp",
