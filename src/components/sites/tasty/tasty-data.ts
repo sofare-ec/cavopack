@@ -49,4 +49,3 @@ export const industries = [
   { title: "E-commerce", slug: "e-commerce", image: "/sites/tasty/images/industry/e-commerce.webp" },
   { title: "Gift shop", slug: "gift-shop", image: "/sites/tasty/images/industry/gift-shop.webp" },
 ];
-
