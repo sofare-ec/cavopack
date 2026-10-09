@@ -143,7 +143,7 @@ export default function TastyHome() {
           <div className="hero-copy">
             <span className="eyebrow">Welcome to</span>
             <h1>Cavopack<br /><span className="hero-tagline">Custom packaging solutions tailored to your brand, built for bulk orders.</span></h1>
-            <p className="hero-description"><span className="hero-description-products">China-Based Manufacturer of Luxury Gift Boxes and Paper Packaging. Custom gift boxes, tote bags, stickers, labels, bakery boxes, and more. Contact us to discuss your packaging needs.</span></p>
+            <p className="hero-description"><span className="hero-description-products">Custom gift boxes, tote bags, stickers, labels, bakery boxes, and more—tailored to your brand, crafted to your specifications, and produced for your business. Contact us to discuss your custom packaging needs.</span></p>
             <div className="hero-actions">
               <a className="button" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer"><Image src="/sites/tasty/images/whatsapp.png" alt="" width={18} height={18} />Inquiry Now</a>
               <Link className="button button-outline" href="/contact/"><Image src="/sites/tasty/images/email-quote.png" alt="" width={18} height={18} />Get Custom Quote</Link>
