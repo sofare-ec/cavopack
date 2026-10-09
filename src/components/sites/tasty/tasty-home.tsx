@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from "react";
 import {
-  Apple,
   ChevronLeft,
   ChevronRight,
   Mail,
@@ -174,15 +173,6 @@ export default function TastyHome() {
           <span className="category-image"><Image src={industry.image} alt="" width={640} height={620} sizes="(max-width: 640px) 100vw, 25vw" /></span>
           <strong>{industry.title}</strong>
         </Link>)}</div>
-      </section>
-
-      <section className="app-promo" id="download">
-        <div className="app-image"><Image src="/sites/tasty/images/app-kitchen.jpg" alt="Tablet open to a recipe in a bright kitchen" width={1200} height={800} sizes="(max-width: 760px) 100vw, 50vw" /></div>
-        <div className="app-copy"><FoodDoodles className="app-doodles" /><div className="app-copy-inner">
-          <span className="eyebrow">Best mobile app</span><h2>Download Our App</h2>
-          <p>Integer at faucibus urna. Nullam condimentum leo id elit sagittis auctor. Curabitur elementum nunc a leo imperdiet, nec elementum diam elementum. Etiam elementum euismod commodo.</p>
-          <div className="store-buttons"><Link href="#newsletter" aria-label="Available on the App Store"><Apple size={26} fill="currentColor" /><span><small>Download on the</small><b>App Store</b></span></Link><Link href="#newsletter" aria-label="Get it on Google Play"><span className="play-triangle">▶</span><span><small>GET IT ON</small><b>Google Play</b></span></Link></div>
-        </div></div>
       </section>
 
       <section className="chefs-section" id="chefs">
