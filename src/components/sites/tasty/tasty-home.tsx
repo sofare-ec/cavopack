@@ -46,7 +46,7 @@ const recipes: Recipe[] = [
     href: "/tote-bag/",
   },
   {
-    title: "Muffin Donut Soufflé Piebear Claw Croissant",
+    title: "Custom packaging designed to protect products, showcase brands, and support efficient bulk orders.",
     category: ["Aperitives"],
     categoryLabel: "PACKAGING",
     image: "/sites/tasty/images/product-type-03.webp",
