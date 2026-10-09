@@ -21,13 +21,13 @@ type Recipe = {
 };
 
 const heroSlides = [
-  { src: "/sites/tasty/images/hero-cavopack-red-gift-box.webp", alt: "Woman presenting a red Cavopack gift box", width: 1500, height: 1500 },
-  { src: "/sites/tasty/images/hero-cavopack-design-shopping-bag.webp", alt: "Cavopack design shopping bag against a red background", width: 1500, height: 1500 },
-  { src: "/sites/tasty/images/hero-canvas-tote-bag.webp", alt: "Woman carrying a beige canvas tote bag", width: 1500, height: 1500 },
-  { src: "/sites/tasty/images/hero-cavopack-kraft-gift-box.webp", alt: "Woman holding a Cavopack kraft gift box", width: 1500, height: 1500 },
-  { src: "/sites/tasty/images/hero-cupcake-bakery-box.webp", alt: "Hand holding a yellow bakery box with cupcakes", width: 1500, height: 1500 },
-  { src: "/sites/tasty/images/hero-kraft-package-sealing.webp", alt: "Hands sealing a Cavopack kraft package with a branded paper band", width: 1500, height: 1500 },
-  { src: "/sites/tasty/images/hero-cavopack-hang-tags.webp", alt: "Cavopack paper hang tags on a garment", width: 1500, height: 1500 },
+  { src: "/sites/tasty/images/hero-cavopack-red-gift-box.webp", alt: "Woman presenting a red Cavopack gift box", href: "/gift-boxes/", width: 1500, height: 1500 },
+  { src: "/sites/tasty/images/hero-cavopack-design-shopping-bag.webp", alt: "Cavopack design shopping bag against a red background", href: "/tote-bag/", width: 1500, height: 1500 },
+  { src: "/sites/tasty/images/hero-canvas-tote-bag.webp", alt: "Woman carrying a beige canvas tote bag", href: "/tote-bag/", width: 1500, height: 1500 },
+  { src: "/sites/tasty/images/hero-cavopack-kraft-gift-box.webp", alt: "Woman holding a Cavopack kraft gift box", href: "/packaging/", width: 1500, height: 1500 },
+  { src: "/sites/tasty/images/hero-cupcake-bakery-box.webp", alt: "Hand holding a yellow bakery box with cupcakes", href: "/brkery-boxes/", width: 1500, height: 1500 },
+  { src: "/sites/tasty/images/hero-kraft-package-sealing.webp", alt: "Hands sealing a Cavopack kraft package with a branded paper band", href: "/stickers/", width: 1500, height: 1500 },
+  { src: "/sites/tasty/images/hero-cavopack-hang-tags.webp", alt: "Cavopack paper hang tags on a garment", href: "/hang-tag/", width: 1500, height: 1500 },
 ];
 
 const recipes: Recipe[] = [
@@ -150,7 +150,7 @@ export default function TastyHome() {
             </div>
           </div>
           <div className="hero-photo-wrap" aria-roledescription="carousel" aria-label="Cavopack packaging photos" onPointerEnter={(event) => { if (event.pointerType === "mouse") setCarouselPaused(true); }} onPointerLeave={(event) => { if (event.pointerType === "mouse") setCarouselPaused(false); }} onTouchStart={(event) => { touchStartX.current = event.touches[0]?.clientX ?? null; }} onTouchEnd={(event) => { const startX = touchStartX.current; touchStartX.current = null; setCarouselPaused(false); const endX = event.changedTouches[0]?.clientX; if (startX === null || endX === undefined) return; const delta = endX - startX; if (Math.abs(delta) < 45) return; setHeroSlide((current) => (current + (delta < 0 ? 1 : -1) + heroSlides.length) % heroSlides.length); }} onTouchCancel={() => { touchStartX.current = null; setCarouselPaused(false); }} onFocusCapture={() => setCarouselPaused(true)} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setCarouselPaused(false); }}>
-            {heroSlide === 0 ? <Link className="hero-slide-link" href="/#gift-boxes" aria-label="Explore gift boxes"><Image className="hero-photo" src={heroSlides[heroSlide].src} alt={heroSlides[heroSlide].alt} width={heroSlides[heroSlide].width} height={heroSlides[heroSlide].height} priority /></Link> : <Image className="hero-photo" src={heroSlides[heroSlide].src} alt={heroSlides[heroSlide].alt} width={heroSlides[heroSlide].width} height={heroSlides[heroSlide].height} />}
+            <Link className="hero-slide-link" href={heroSlides[heroSlide].href} aria-label={`Explore ${heroSlides[heroSlide].alt}`}><Image className="hero-photo" src={heroSlides[heroSlide].src} alt={heroSlides[heroSlide].alt} width={heroSlides[heroSlide].width} height={heroSlides[heroSlide].height} priority={heroSlide === 0} /></Link>
             <button className="hero-carousel-control hero-carousel-previous" type="button" aria-label="Previous image" onClick={() => setHeroSlide((current) => (current - 1 + heroSlides.length) % heroSlides.length)}><ChevronLeft size={22} /></button>
             <button className="hero-carousel-control hero-carousel-next" type="button" aria-label="Next image" onClick={() => setHeroSlide((current) => (current + 1) % heroSlides.length)}><ChevronRight size={22} /></button>
             <div className="hero-carousel-dots" aria-label="Choose image">{heroSlides.map((slide, index) => <button key={slide.src} className={index === heroSlide ? "is-active" : ""} type="button" aria-label={`Show image ${index + 1}`} aria-current={index === heroSlide ? "true" : undefined} onClick={() => setHeroSlide(index)} />)}</div>
