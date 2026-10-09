@@ -20,7 +20,7 @@ export function TastyHeader() {
     ["Contact", "/contact/", pathname.startsWith("/contact/")],
   ] as const;
   return <header className="site-header">
-    <div className="brand-row"><Link className="brand" href="/" aria-label="Cavopack home"><span>Cavopack</span></Link><span className="brand-qualifier">Packaging Manufacturer</span></div>
+    <div className="brand-row"><Link className="brand" href="/" aria-label="Cavopack home"><span>Cavopack</span></Link><span className="brand-qualifier">China-Based Manufacturer of Luxury Gift Boxes and Paper Packaging</span></div>
     <nav className={`primary-nav${open ? " is-open" : ""}`} aria-label="Main navigation">
       <div className="nav-social"><span>Custom packaging for your brand</span></div>
       <button className="mobile-menu-toggle" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)}>{open ? <X size={22} /> : <Menu size={22} />}</button>
