@@ -61,7 +61,7 @@ const recipes: Recipe[] = [
     href: "/brkery-boxes/",
   },
   {
-    title: "Custom adhesive labels with vibrant printing for packaging, branding, and promotions.",
+    title: "Custom self-adhesive labels for bottles and packaging, tailored to your brand and product specifications.",
     category: ["Aperitives"],
     categoryLabel: "LABEL",
     image: "/sites/tasty/images/product-type-05.webp",
