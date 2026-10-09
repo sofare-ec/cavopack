@@ -60,7 +60,7 @@ const recipes: Recipe[] = [
     href: "/brkery-boxes/",
   },
   {
-    title: "Gingerbread Donut Bear Claw Powder",
+    title: "Custom adhesive labels with vibrant printing for packaging, branding, and promotions.",
     category: ["Aperitives"],
     categoryLabel: "STICKERS",
     image: "/sites/tasty/images/product-type-05.webp",
