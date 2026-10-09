@@ -80,10 +80,10 @@ const categories = [
   { title: "Jewelry", count: "1 article", slug: "pizzas", image: "/sites/tasty/images/likemeat-cbnauxsztfo-unsplash-800x530.jpg" },
   { title: "Bakery", count: "3 articles", slug: "salads", image: "/sites/tasty/images/farhad-ibrahimzade-d-domdrwoaq-unsplash-800x530.jpg" },
   { title: "Clothing", count: "3 articles", slug: "deserts", image: "/sites/tasty/images/monika-grabkowska-p1aohbit-ey-unsplash.jpeg" },
-  { title: "Candle", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
-  { title: "Perfume", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
-  { title: "E-commerce", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
-  { title: "Gift shop", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
+  { title: "Candle", count: "1 article", slug: "soups", image: "/sites/tasty/images/product-type-06.webp" },
+  { title: "Perfume", count: "1 article", slug: "soups", image: "/sites/tasty/images/hero-kraft-package-sealing.webp" },
+  { title: "E-commerce", count: "1 article", slug: "soups", image: "/sites/tasty/images/hero-cavopack-kraft-gift-box.webp" },
+  { title: "Gift shop", count: "1 article", slug: "soups", image: "/sites/tasty/images/hero-cupcake-bakery-box.webp" },
 ];
 
 const chefs = [
