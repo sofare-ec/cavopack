@@ -75,12 +75,6 @@ const recipes: Recipe[] = [
   },
 ];
 
-const chefs = [
-  { name: "Nick Paterson", image: "/sites/tasty/images/chef-nick.jpg" },
-  { name: "Jacob Guerrero", image: "/sites/tasty/images/chef-jacob.jpg" },
-  { name: "Melissa Prey", image: "/sites/tasty/images/chef-melissa.jpg" },
-];
-
 function FoodDoodles({ className = "" }: { className?: string }) {
   return <div aria-hidden="true" className={`food-doodles ${className}`} />;
 }
@@ -173,15 +167,6 @@ export default function TastyHome() {
           <span className="category-image"><Image src={industry.image} alt="" width={640} height={620} sizes="(max-width: 640px) 100vw, 25vw" /></span>
           <strong>{industry.title}</strong>
         </Link>)}</div>
-      </section>
-
-      <section className="chefs-section" id="chefs">
-        <FoodDoodles />
-        <SectionHeading title="Our Qualified Chefs">Fusce dignissim blandit justo, eget elementum risus tristique. Nunc lacus lacus, sit amet accumsan est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus.</SectionHeading>
-        <div className="chef-grid">{chefs.map((chef) => <article className="chef-card" key={chef.name}>
-          <Image className="chef-photo" src={chef.image} alt={chef.name} width={500} height={500} sizes="(max-width: 760px) 80vw, 300px" />
-          <h3>{chef.name}</h3><p>Chef</p><Link href="/about/">Meet our team</Link>
-        </article>)}</div>
       </section>
 
       <section className="community-section" id="community">
