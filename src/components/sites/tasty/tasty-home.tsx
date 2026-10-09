@@ -3,11 +3,10 @@
 import Link from "next/link";
 
 import Image from "next/image";
-import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import {
   ChevronLeft,
   ChevronRight,
-  Mail,
 } from "lucide-react";
 import { TastyFooter, TastyHeader } from "./tasty-shell";
 import { industries } from "./tasty-data";
@@ -91,7 +90,6 @@ function SectionHeading({ title, children }: { title: string; children: ReactNod
 export default function TastyHome() {
   const [query, setQuery] = useState("");
   const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
-  const [subscribed, setSubscribed] = useState(false);
   const [heroSlide, setHeroSlide] = useState(0);
   const [carouselPaused, setCarouselPaused] = useState(false);
   const touchStartX = useRef<number | null>(null);
@@ -110,11 +108,6 @@ export default function TastyHome() {
       return matchesQuery && matchesCategory;
     });
   }, [categoryFilter, query]);
-
-  function submitNewsletter(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setSubscribed(true);
-  }
 
   return (
     <main className="tasty-site">
@@ -173,13 +166,6 @@ export default function TastyHome() {
         <div className="community-shade" />
         <div className="community-content"><span>Meet chefs around the world</span><h2>Join a Global Community of Change<br className="desktop-break" /> Makers and People Like You</h2>
           <div className="stats-grid"><div><strong>2,000</strong><span>Unique recipes</span></div><div><strong>3,000</strong><span>Awesome members</span></div><div><strong>100%</strong><span>Satisfaction rate</span></div></div>
-        </div>
-      </section>
-
-      <section className="newsletter-section" id="newsletter">
-        <FoodDoodles />
-        <div className="newsletter-card"><Mail className="newsletter-icon" size={26} /><h2>Newsletter Updates</h2><p>Enter your email address below to subscribe to our tasty newsletter</p>
-          {subscribed ? <div className="success-message" role="status">Email accepted for this preview. Mailing list connection is not configured.</div> : <form className="newsletter-form" onSubmit={submitNewsletter}><label className="sr-only" htmlFor="newsletter-email">Email address</label><input id="newsletter-email" type="email" placeholder="Your email address" required /><button className="button" type="submit">Subscribe</button></form>}
         </div>
       </section>
 
