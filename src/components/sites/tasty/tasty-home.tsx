@@ -32,7 +32,7 @@ const heroSlides = [
 
 const recipes: Recipe[] = [
   {
-    title: "Customizable rigid gift boxes with consistent quality for bulk orders.",
+    title: "Custom rigid gift boxes, crafted to your brand specifications with consistent quality for bulk orders.",
     category: ["Aperitives"],
     categoryLabel: "gift boxes",
     image: "/sites/tasty/images/product-type-01.webp",
