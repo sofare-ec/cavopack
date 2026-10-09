@@ -39,4 +39,15 @@ export const recipeHref = (recipe: TastyRecipe) => productRouteSlugs[recipe.slug
 export const categorySlugs = ["aperitives", "pizzas", "salads", "deserts", "soups"] as const;
 export const categoryTitle = (slug: string) => ({ aperitives: "Aperitives", pizzas: "Pizzas", salads: "Salads", deserts: "Deserts", soups: "Soups" }[slug as typeof categorySlugs[number]] ?? slug);
 
+export const industries = [
+  { title: "Cosmetics", slug: "cosmetics", image: "/sites/tasty/images/ella-olsson-pb9afvr9-bk-unsplash-800x530.jpg" },
+  { title: "Jewelry", slug: "jewelry", image: "/sites/tasty/images/likemeat-cbnauxsztfo-unsplash-800x530.jpg" },
+  { title: "Bakery", slug: "bakery", image: "/sites/tasty/images/farhad-ibrahimzade-d-domdrwoaq-unsplash-800x530.jpg" },
+  { title: "Clothing", slug: "clothing", image: "/sites/tasty/images/monika-grabkowska-p1aohbit-ey-unsplash.jpeg" },
+  { title: "Candle", slug: "candle", image: "/sites/tasty/images/product-type-06.webp" },
+  { title: "Perfume", slug: "perfume", image: "/sites/tasty/images/hero-kraft-package-sealing.webp" },
+  { title: "E-commerce", slug: "e-commerce", image: "/sites/tasty/images/hero-cavopack-kraft-gift-box.webp" },
+  { title: "Gift shop", slug: "gift-shop", image: "/sites/tasty/images/hero-cupcake-bakery-box.webp" },
+];
+
 export const trending = [tastyRecipes[9], tastyRecipes[0], tastyRecipes[8], tastyRecipes[7]];

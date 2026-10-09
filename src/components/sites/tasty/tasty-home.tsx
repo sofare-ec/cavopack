@@ -11,6 +11,7 @@ import {
   Mail,
 } from "lucide-react";
 import { TastyFooter, TastyHeader } from "./tasty-shell";
+import { industries } from "./tasty-data";
 
 type Recipe = {
   title: string;
@@ -73,17 +74,6 @@ const recipes: Recipe[] = [
     image: "/sites/tasty/images/product-type-06.webp",
     href: "/hang-tag/",
   },
-];
-
-const categories = [
-  { title: "Cosmetics", count: "3 articles", slug: "aperitives", image: "/sites/tasty/images/ella-olsson-pb9afvr9-bk-unsplash-800x530.jpg" },
-  { title: "Jewelry", count: "1 article", slug: "pizzas", image: "/sites/tasty/images/likemeat-cbnauxsztfo-unsplash-800x530.jpg" },
-  { title: "Bakery", count: "3 articles", slug: "salads", image: "/sites/tasty/images/farhad-ibrahimzade-d-domdrwoaq-unsplash-800x530.jpg" },
-  { title: "Clothing", count: "3 articles", slug: "deserts", image: "/sites/tasty/images/monika-grabkowska-p1aohbit-ey-unsplash.jpeg" },
-  { title: "Candle", count: "1 article", slug: "soups", image: "/sites/tasty/images/product-type-06.webp" },
-  { title: "Perfume", count: "1 article", slug: "soups", image: "/sites/tasty/images/hero-kraft-package-sealing.webp" },
-  { title: "E-commerce", count: "1 article", slug: "soups", image: "/sites/tasty/images/hero-cavopack-kraft-gift-box.webp" },
-  { title: "Gift shop", count: "1 article", slug: "soups", image: "/sites/tasty/images/hero-cupcake-bakery-box.webp" },
 ];
 
 const chefs = [
@@ -180,9 +170,9 @@ export default function TastyHome() {
 
       <section className="category-section section-shell" aria-labelledby="industry">
         <div className="section-heading"><h2 id="industry">Explore by Industry</h2><p>Fusce dignissim blandit justo, eget elementum risus tristique. Nunc lacus lacus, sit amet accumsan est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus.</p></div>
-        <div className="category-grid">{categories.map((category, index) => <Link className="category-card" href={`/category/${category.slug}/`} key={`${category.title}-${index}`} aria-label={`Browse ${category.title} recipes`}>
-          <Image src={category.image} alt="" width={640} height={620} sizes="(max-width: 640px) 100vw, 25vw" />
-          <span className="category-count">{category.count}</span><strong>{category.title}</strong>
+        <div className="category-grid">{industries.map((industry) => <Link className="category-card" href={`/${industry.slug}/`} key={industry.slug} aria-label={`Explore ${industry.title} packaging`}>
+          <Image src={industry.image} alt="" width={640} height={620} sizes="(max-width: 640px) 100vw, 25vw" />
+          <strong>{industry.title}</strong>
         </Link>)}</div>
       </section>
 

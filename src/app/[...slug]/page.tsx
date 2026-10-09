@@ -1,5 +1,5 @@
 import TastyContentPage from "@/components/sites/tasty/tasty-content-page";
-import { productRouteSlugs, tastyRecipes } from "@/components/sites/tasty/tasty-data";
+import { industries, productRouteSlugs, tastyRecipes } from "@/components/sites/tasty/tasty-data";
 
 const fixedRoutes = [
   "recipes",
@@ -26,7 +26,7 @@ const productRoutes = Object.values(productRouteSlugs);
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [...fixedRoutes, ...recipeRoutes, ...productRoutes].map((route) => ({ slug: route.split("/") }));
+  return [...fixedRoutes, ...recipeRoutes, ...productRoutes, ...industries.map((industry) => industry.slug)].map((route) => ({ slug: route.split("/") }));
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string[] }> }) {

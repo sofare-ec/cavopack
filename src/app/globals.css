@@ -173,8 +173,6 @@ img { display: block; max-width: 100%; }
 .category-card:hover img, .category-card.selected img { transform: scale(1.06); }
 .category-card.selected { outline: 4px solid #ed793f; outline-offset: 3px; }
 .category-card strong { position: absolute; left: 31px; bottom: 31px; font-size: 20px; }
-.category-count { position: absolute; right: 22px; top: 18px; color: #fff; font-size: 14px; font-weight: 700; opacity: 0; transition: opacity .2s; }
-.category-card:hover .category-count, .category-card.selected .category-count { opacity: 1; }
 
 .app-promo { min-height: 575px; display: grid; grid-template-columns: 1fr 1fr; }
 .app-image { min-height: 575px; overflow: hidden; }

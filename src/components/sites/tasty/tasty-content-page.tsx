@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { TastyShell } from "./tasty-shell";
-import { categorySlugs, categoryTitle, productRouteSlugs, recipeHref, tastyRecipes, type TastyRecipe } from "./tasty-data";
+import { categorySlugs, categoryTitle, industries, productRouteSlugs, recipeHref, tastyRecipes, type TastyRecipe } from "./tasty-data";
 import { LocalPreviewForm, PrintRecipeButton } from "./tasty-preview-form";
 
 const excerptText = "Integer at faucibus urna. Nullam condimentum leo id elit sagittis auctor. Curabitur elementum nunc a leo imperdiet, nec elementum diam elementum.";
@@ -64,6 +64,16 @@ function IndustriesPage() {
   </>;
 }
 
+function IndustryPage({ industry }: { industry: (typeof industries)[number] }) {
+  const description = `Custom packaging for ${industry.title.toLowerCase()} businesses. Contact us to discuss your requirements.`;
+  return <><PageIntro title={`${industry.title} Packaging`}><><Breadcrumbs parts={[{ label: "Industries", href: "/#industry" }, { label: industry.title }]} />{description}</></PageIntro>
+    <section className="tasty-article">
+      <figure className="article-cover"><Image src={industry.image} alt={`${industry.title} packaging scene`} width={1100} height={720} priority /></figure>
+      <div className="article-body"><p>{description}</p><Link className="button" href="/contact/">Get Custom Quote</Link></div>
+    </section>
+  </>;
+}
+
 function GiftBoxesPage() {
   return <><PageIntro title="gift boxes" /><Breadcrumbs parts={[{ label: "gift boxes" }]} />
     <section className="tasty-article">
@@ -88,12 +98,14 @@ function NotFoundPage() {
 export default function TastyContentPage({ slug }: { slug: string[] }) {
   let content: ReactNode;
   const path = slug.join("/");
+  const industry = industries.find((item) => item.slug === path);
   if (path === "recipes") content = <ArchivePage title="Recipes" items={tastyRecipes.slice(0, 9)} />;
   else if (path === "recipes/page/2") content = <ArchivePage title="Recipes" items={tastyRecipes.slice(9)} page={2} />;
   else if (path === "about") content = <AboutPage />;
   else if (path === "industries") content = <IndustriesPage />;
   else if (path === "contact") content = <ContactPage />;
   else if (path === "gift-boxes") content = <GiftBoxesPage />;
+  else if (industry) content = <IndustryPage industry={industry} />;
   else if (path === "author/admin_tasty") content = <ArchivePage title="Articles by Amie" items={tastyRecipes} />;
   else if (slug[0] === "category" && slug.length === 2 && categorySlugs.includes(slug[1] as typeof categorySlugs[number])) {
     const category = slug[1];
