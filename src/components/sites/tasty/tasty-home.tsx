@@ -171,7 +171,7 @@ export default function TastyHome() {
       <section className="category-section section-shell" aria-labelledby="industry">
         <div className="section-heading"><h2 id="industry">Explore by Industry</h2><p>Discover packaging solutions tailored to your industry. From gift boxes and paper bags to bakery packaging and labels, we offer customizable options to support your brand and business needs. Contact us to discuss your project and request a quote.</p></div>
         <div className="category-grid">{industries.map((industry) => <Link className="category-card" href={`/${industry.slug}/`} key={industry.slug} aria-label={`Explore ${industry.title} packaging`}>
-          <Image src={industry.image} alt="" width={640} height={620} sizes="(max-width: 640px) 100vw, 25vw" />
+          <span className="category-image"><Image src={industry.image} alt="" width={640} height={620} sizes="(max-width: 640px) 100vw, 25vw" /></span>
           <strong>{industry.title}</strong>
         </Link>)}</div>
       </section>
