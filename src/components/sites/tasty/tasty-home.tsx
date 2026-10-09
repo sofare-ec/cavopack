@@ -76,14 +76,14 @@ const recipes: Recipe[] = [
 ];
 
 const categories = [
-  { title: "Aperitives", count: "3 articles", slug: "aperitives", image: "/sites/tasty/images/ella-olsson-pb9afvr9-bk-unsplash-800x530.jpg" },
-  { title: "Pizzas", count: "1 article", slug: "pizzas", image: "/sites/tasty/images/likemeat-cbnauxsztfo-unsplash-800x530.jpg" },
-  { title: "Salads", count: "3 articles", slug: "salads", image: "/sites/tasty/images/farhad-ibrahimzade-d-domdrwoaq-unsplash-800x530.jpg" },
-  { title: "Deserts", count: "3 articles", slug: "deserts", image: "/sites/tasty/images/monika-grabkowska-p1aohbit-ey-unsplash.jpeg" },
-  { title: "Soups", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
-  { title: "Soups", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
-  { title: "Soups", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
-  { title: "Soups", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
+  { title: "Cosmetics", count: "3 articles", slug: "aperitives", image: "/sites/tasty/images/ella-olsson-pb9afvr9-bk-unsplash-800x530.jpg" },
+  { title: "Jewelry", count: "1 article", slug: "pizzas", image: "/sites/tasty/images/likemeat-cbnauxsztfo-unsplash-800x530.jpg" },
+  { title: "Bakery", count: "3 articles", slug: "salads", image: "/sites/tasty/images/farhad-ibrahimzade-d-domdrwoaq-unsplash-800x530.jpg" },
+  { title: "Clothing", count: "3 articles", slug: "deserts", image: "/sites/tasty/images/monika-grabkowska-p1aohbit-ey-unsplash.jpeg" },
+  { title: "Candle", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
+  { title: "Perfume", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
+  { title: "E-commerce", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
+  { title: "Gift shop", count: "1 article", slug: "soups", image: "/sites/tasty/images/nick-karvounis-ymyfbvw7og8-unsplash-800x530.jpg" },
 ];
 
 const chefs = [
