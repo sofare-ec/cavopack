@@ -17,7 +17,7 @@ const post = (date: string, slug: string) => `/${date}/${slug}/`;
 export const productRouteSlugs: Record<string, string> = {
   "muffin-donut-souffle-piebear-claw-croissant": "packaging",
   "bearclaw-dragee-sweet-rolloat-mosering": "brkery-boxes",
-  "gingerbread-donut-bear-claw": "stickers",
+  "gingerbread-donut-bear-claw": "label",
   "sweet-roll-chupa-chups-halvah-muffin": "hang-tag",
 };
 

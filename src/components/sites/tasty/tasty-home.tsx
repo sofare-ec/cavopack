@@ -27,7 +27,7 @@ const heroSlides = [
   { src: "/sites/tasty/images/hero-canvas-tote-bag.webp", alt: "Woman carrying a beige canvas tote bag", href: "/tote-bag/", width: 1500, height: 1500 },
   { src: "/sites/tasty/images/hero-cavopack-kraft-gift-box.webp", alt: "Woman holding a Cavopack kraft gift box", href: "/packaging/", width: 1500, height: 1500 },
   { src: "/sites/tasty/images/hero-cupcake-bakery-box.webp", alt: "Hand holding a yellow bakery box with cupcakes", href: "/brkery-boxes/", width: 1500, height: 1500 },
-  { src: "/sites/tasty/images/hero-kraft-package-sealing.webp", alt: "Hands sealing a Cavopack kraft package with a branded paper band", href: "/stickers/", width: 1500, height: 1500 },
+  { src: "/sites/tasty/images/hero-kraft-package-sealing.webp", alt: "Hands sealing a Cavopack kraft package with a branded paper band", href: "/label/", width: 1500, height: 1500 },
   { src: "/sites/tasty/images/hero-cavopack-hang-tags.webp", alt: "Cavopack paper hang tags on a garment", href: "/hang-tag/", width: 1500, height: 1500 },
 ];
 
@@ -63,9 +63,9 @@ const recipes: Recipe[] = [
   {
     title: "Custom adhesive labels with vibrant printing for packaging, branding, and promotions.",
     category: ["Aperitives"],
-    categoryLabel: "STICKERS",
+    categoryLabel: "LABEL",
     image: "/sites/tasty/images/product-type-05.webp",
-    href: "/stickers/",
+    href: "/label/",
   },
   {
     title: "Custom hang tags add polished branding and clear product information to packaging.",
