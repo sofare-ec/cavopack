@@ -84,7 +84,7 @@ function ContactPage() {
   return <><PageIntro title="Contact">{excerptText}</PageIntro><Breadcrumbs parts={[{ label: "Contact" }]} />
     <section className="tasty-contact tasty-section"><div className="contact-details"><article><h2>Physical Address</h2><p>304 North Cardinal St.<br />Dorchester Center, MA 02124</p></article><article><h2>Email Address</h2><p>info@company.com<br />contact@company.com</p></article><article><h2>Phone Numbers</h2><p>1-555-123-4567<br />1-800-123-4567</p></article><p className="template-note">These address and phone details are sample content from the original demo page, not verified Cavopack contact details.</p></div>
       <div className="contact-copy"><h2>Dolor consectetur adipiscing</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.</p><div className="contact-highlights"><h3>Mauris nunc congue suscipit</h3><p>Nullam condimentum leo id elit sagittis auctor</p><h3>Dolor sit amet consectetur adipiscing</h3></div></div>
-    </section><section className="tasty-contact-form" id="message"><div><span className="eyebrow">Get in touch</span><h2>Get In Touch</h2><p>Nullam condimentum leo id elit sagittis auctor.</p></div><LocalPreviewForm kind="contact" /></section>
+    </section>
   </>;
 }
 
