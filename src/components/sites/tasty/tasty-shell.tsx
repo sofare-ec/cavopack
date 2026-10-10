@@ -38,10 +38,7 @@ export function TastyHeader() {
 export function TastyFooter() {
   return <>
     <footer className="site-footer" id="footer"><div className="footer-columns">
-      <div><h3>Cavopack</h3><Link href="/">Introduction</Link><Link href="/recipes/">Products</Link><Link href="/about/">About us</Link></div>
-      <div><h3>Useful Links</h3><Link href="/recipes/">All products</Link><Link href="/category/aperitives/">Aperitives</Link><Link href="/category/pizzas/">Pizzas</Link><Link href="/category/salads/">Salads</Link><Link href="/category/deserts/">Deserts</Link><Link href="/category/soups/">Soups</Link></div>
       <div><h3>Contact Us</h3><p>Mattis ullamcorper velit sed ullamcorper.</p><p>Phone: (+63) 555 1212<br />Fax: (+63) 555 0100</p><p>Need help or have a question?<br />Contact us at: <Link href="/contact/">Contact page</Link></p></div>
-      <div><h3>Explore</h3><p>Browse the pages and categories in this local site copy.</p><Link href="/author/admin_tasty/">Articles by Amie</Link><Link href="/contact/">Contact and enquiries</Link></div>
     </div><div className="copyright">Copyright © 2025 - Cavopack</div></footer>
   </>;
 }

@@ -232,7 +232,7 @@ img { display: block; max-width: 100%; }
 .trending-item:hover span { color: #f69561; }
 
 .site-footer { color: #919294; background: #08090a; }
-.footer-columns { max-width: 1290px; margin: 0 auto; padding: 54px 10px 49px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.footer-columns { max-width: 1290px; margin: 0 auto; padding: 54px 10px 49px; display: grid; grid-template-columns: 1fr; }
 .footer-columns > div { min-height: 232px; padding: 0 24px; display: flex; flex-direction: column; align-items: flex-start; gap: 7px; border-right: 1px solid #1a1b1d; }
 .footer-columns > div:first-child { padding-left: 0; }
 .footer-columns > div:last-child { border: 0; padding-right: 0; }
@@ -342,7 +342,7 @@ img { display: block; max-width: 100%; }
   .trending-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 12px; }
   .trending-item { gap: 9px; font-size: 11px; }
   .trending-item img { width: 48px; height: 48px; }
-  .footer-columns { padding: 40px 22px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 33px 18px; }
+  .footer-columns { padding: 40px 22px; grid-template-columns: 1fr; gap: 33px 18px; }
   .footer-columns > div, .footer-columns > div:first-child, .footer-columns > div:last-child { min-height: 0; padding: 0 10px 0 0; border: 0; font-size: 13px; }
   .footer-columns h3 { font-size: 14px; }
   .copyright { min-height: 62px; padding: 18px 22px; font-size: 11px; }
