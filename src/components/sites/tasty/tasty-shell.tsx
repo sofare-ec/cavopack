@@ -38,7 +38,7 @@ export function TastyHeader() {
 export function TastyFooter() {
   return <>
     <footer className="site-footer" id="footer"><div className="footer-columns">
-      <div><h3>Contact Us</h3><p>Mattis ullamcorper velit sed ullamcorper.</p><p>Phone: (+63) 555 1212<br />Fax: (+63) 555 0100</p><p>Need help or have a question?<br />Contact us at: <Link href="/contact/">Contact page</Link></p></div>
+      <div><h3>Contact Us</h3><p>Custom packaging, made for your brand.</p><p>Phone: (+86) 13506614950<br />E-mail: sofare@cavopack.com</p><p>Have a packaging project in mind?<br />Contact us to discuss your custom requirements and request a quote.<br />Contact us at: <Link href="/contact/">Contact page</Link></p></div>
     </div><div className="copyright">Copyright © 2026 - Cavopack</div></footer>
   </>;
 }
