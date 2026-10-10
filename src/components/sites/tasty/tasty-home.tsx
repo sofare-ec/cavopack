@@ -117,7 +117,7 @@ export default function TastyHome() {
         <FoodDoodles />
         <div className="hero-inner">
           <div className="hero-copy">
-            <span className="eyebrow">Welcome to</span>
+            <span className="eyebrow">CUSTOM PACKAGING</span>
             <h1>Cavopack<br /><span className="hero-tagline">Custom packaging solutions tailored to your brand, built for bulk orders.</span></h1>
             <p className="hero-description"><span className="hero-description-products">Custom gift boxes, tote bags, stickers, labels, bakery boxes, and more—tailored to your brand, crafted to your specifications, and produced for your business. Contact us to discuss your custom packaging needs.</span></p>
             <div className="hero-actions">
