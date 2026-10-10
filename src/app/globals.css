@@ -201,7 +201,7 @@ img { display: block; max-width: 100%; }
 .community-section { position: relative; width: calc(100% - 20px); max-width: 1270px; margin: 0 auto; min-height: 580px; display: grid; place-items: center; overflow: hidden; isolation: isolate; background: url("/sites/tasty/images/community-bg.jpg") center 48% / cover no-repeat; color: #fff; }
 .product-intro-section { position: relative; width: calc(100% - 20px); max-width: 1270px; margin: 0 auto; min-height: 580px; display: grid; place-items: center; overflow: hidden; isolation: isolate; background: url("/sites/tasty/images/product-intro-bg.jpg") center 48% / cover no-repeat; color: #fff; }
 .community-shade { position: absolute; inset: 0; z-index: -1; background: #17120fbd; }
-.product-intro-shade { position: absolute; inset: 0; z-index: -1; background: #17120fbd; }
+.product-intro-shade { position: absolute; inset: 0; z-index: -1; background: rgb(23 18 15 / 37.06%); }
 .community-content { max-width: 900px; padding: 80px 30px; text-align: center; }
 .product-intro-content { max-width: 900px; padding: 80px 30px; text-align: center; }
 .community-content > span { font-size: 14px; text-transform: uppercase; letter-spacing: .5px; }
