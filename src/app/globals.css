@@ -199,7 +199,7 @@ img { display: block; max-width: 100%; }
 .chef-card h3 { margin: 26px 0 2px; font-size: 16px; }
 .chef-card p { margin: 0 0 22px; color: #cf8a6b; }
 
-.community-section { position: relative; min-height: 580px; display: grid; place-items: center; overflow: hidden; isolation: isolate; background: url("/sites/tasty/images/community-bg.jpg") center 48% / cover no-repeat; color: #fff; }
+.community-section { position: relative; width: calc(100% - 20px); max-width: 1270px; margin: 0 auto; min-height: 580px; display: grid; place-items: center; overflow: hidden; isolation: isolate; background: url("/sites/tasty/images/community-bg.jpg") center 48% / cover no-repeat; color: #fff; }
 .community-shade { position: absolute; inset: 0; z-index: -1; background: #17120fbd; }
 .community-content { max-width: 900px; padding: 80px 30px; text-align: center; }
 .community-content > span { font-size: 14px; text-transform: uppercase; letter-spacing: .5px; }
@@ -325,7 +325,7 @@ img { display: block; max-width: 100%; }
   .chef-grid { grid-template-columns: 1fr; gap: 49px; }
   .chef-photo { width: 205px; height: 205px; }
   .chef-card h3 { margin-top: 18px; }
-  .community-section { min-height: 500px; }
+  .community-section { width: calc(100% - 40px); min-height: 500px; }
   .community-content { padding: 65px 22px; }
   .community-content h2 { margin: 17px 0 38px; font-size: 28px; line-height: 1.35; }
   .desktop-break { display: none; }
