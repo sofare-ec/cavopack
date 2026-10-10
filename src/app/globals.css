@@ -71,11 +71,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
 a { color: inherit; text-decoration: none; }
 button { color: inherit; }
 img { display: block; max-width: 100%; }
-.tasty-site { overflow: clip; }
+.tasty-site { overflow: clip; padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px)); }
+.bottom-navigation { position: fixed; z-index: 40; right: 0; bottom: 0; left: 0; padding-bottom: env(safe-area-inset-bottom, 0px); background: #101113; border-top: 1px solid #292b30; }
+.bottom-navigation > div { max-width: 1290px; min-height: 56px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.bottom-navigation a { min-height: 56px; display: flex; align-items: center; justify-content: center; color: #d2d2d2; font-size: clamp(11px, 2.8vw, 15px); font-weight: 650; }
+.bottom-navigation a:hover, .bottom-navigation a:focus-visible { color: var(--orange); background: #1c1d20; }
+.bottom-navigation .bottom-navigation-whatsapp { color: #29c44b; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
 .site-header { position: sticky; top: 0; z-index: 20; background: #101113; }
-.floating-contact-links { position: fixed; z-index: 60; right: 20px; bottom: 20px; left: 20px; display: flex; justify-content: space-between; align-items: center; pointer-events: none; }
+.floating-contact-links { position: fixed; z-index: 60; right: 20px; bottom: calc(76px + env(safe-area-inset-bottom, 0px)); left: 20px; display: flex; justify-content: space-between; align-items: center; pointer-events: none; }
 .floating-contact-links a { display: grid; place-items: center; pointer-events: auto; }
 .floating-contact-email img { width: 45px; height: 35px; object-fit: contain; }
 .floating-contact-whatsapp img { width: 40px; height: 40px; object-fit: contain; }
@@ -275,7 +280,7 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 760px) {
   html { scroll-padding-top: 134px; }
-  .floating-contact-links { right: 12px; bottom: 12px; left: 12px; }
+  .floating-contact-links { right: 12px; bottom: calc(68px + env(safe-area-inset-bottom, 0px)); left: 12px; }
   .floating-contact-email img { width: 38px; height: 30px; }
   .floating-contact-whatsapp img { width: 35px; height: 35px; }
   .brand-row { height: auto; min-height: 76px; padding: 12px 19px; grid-template-columns: 1fr; justify-items: start; gap: 6px; }

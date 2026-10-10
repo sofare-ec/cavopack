@@ -40,6 +40,9 @@ export function TastyFooter() {
     <footer className="site-footer" id="footer"><div className="footer-columns">
       <div><h3>Contact Us</h3><p>Custom packaging, made for your brand.</p><p>Phone: (+86) 13506614950<br />E-mail: sofare@cavopack.com</p><p>Have a packaging project in mind?<br />Contact us to discuss your custom requirements and request a quote.<br />Contact us at: <Link href="/contact/">Contact page</Link></p></div>
     </div><div className="copyright">Copyright © 2026 - Cavopack</div></footer>
+    <nav className="bottom-navigation" aria-label="Bottom navigation"><div>
+      <a href="/">Home</a><a href="/#products">Products</a><a href="/#industry">Industries</a><Link href="/contact/">Contact</Link><a className="bottom-navigation-whatsapp" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div></nav>
   </>;
 }
 
