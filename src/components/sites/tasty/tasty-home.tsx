@@ -134,6 +134,13 @@ export default function TastyHome() {
         </div>
       </section>
 
+      <section className="product-intro-section" id="product-intro">
+        <div className="product-intro-shade" />
+        <div className="product-intro-content"><span>Meet chefs around the world</span><h2>Join a Global Community of Change<br className="product-intro-break" /> Makers and People Like You</h2>
+          <div className="product-intro-stats"><div><strong>2,000</strong><span>Unique recipes</span></div><div><strong>3,000</strong><span>Awesome members</span></div><div><strong>100%</strong><span>Satisfaction rate</span></div></div>
+        </div>
+      </section>
+
       <section className="recipes-section section-shell" id="products">
         <SectionHeading title="Explore By Product Type">Start with the packaging type that best fits your project. Each type has its own page with material options and key details. Looking for more styles? Contact us to explore additional options and request a quote.</SectionHeading>
         <div className="recipe-grid">

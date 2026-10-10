@@ -138,7 +138,6 @@ img { display: block; max-width: 100%; }
 
 .section-shell { max-width: 1290px; margin: 0 auto; padding-left: 10px; padding-right: 10px; }
 .recipes-section { position: relative; padding-top: 115px; padding-bottom: 72px; }
-.recipes-section::before { content: ""; position: absolute; top: 7px; left: 50%; width: min(100%, 1290px); height: 1px; margin: 0 auto; transform: translateX(-50%); background: var(--line); pointer-events: none; }
 .section-heading { max-width: 780px; margin: 0 auto 50px; text-align: center; }
 .section-heading h2, .newsletter-card h2 { margin: 0 0 14px; font-size: 36px; line-height: 1.25; font-weight: 800; letter-spacing: -1px; }
 .section-heading p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.75; }
@@ -200,14 +199,23 @@ img { display: block; max-width: 100%; }
 .chef-card p { margin: 0 0 22px; color: #cf8a6b; }
 
 .community-section { position: relative; width: calc(100% - 20px); max-width: 1270px; margin: 0 auto; min-height: 580px; display: grid; place-items: center; overflow: hidden; isolation: isolate; background: url("/sites/tasty/images/community-bg.jpg") center 48% / cover no-repeat; color: #fff; }
+.product-intro-section { position: relative; width: calc(100% - 20px); max-width: 1270px; margin: 0 auto; min-height: 580px; display: grid; place-items: center; overflow: hidden; isolation: isolate; background: url("/sites/tasty/images/product-intro-bg.jpg") center 48% / cover no-repeat; color: #fff; }
 .community-shade { position: absolute; inset: 0; z-index: -1; background: #17120fbd; }
+.product-intro-shade { position: absolute; inset: 0; z-index: -1; background: #17120fbd; }
 .community-content { max-width: 900px; padding: 80px 30px; text-align: center; }
+.product-intro-content { max-width: 900px; padding: 80px 30px; text-align: center; }
 .community-content > span { font-size: 14px; text-transform: uppercase; letter-spacing: .5px; }
+.product-intro-content > span { font-size: 14px; text-transform: uppercase; letter-spacing: .5px; }
 .community-content h2 { margin: 19px 0 54px; font-size: 37px; line-height: 1.45; }
+.product-intro-content h2 { margin: 19px 0 54px; font-size: 37px; line-height: 1.45; }
 .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 55px; }
+.product-intro-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 55px; }
 .stats-grid div { display: flex; flex-direction: column; align-items: center; gap: 10px; text-transform: uppercase; }
+.product-intro-stats div { display: flex; flex-direction: column; align-items: center; gap: 10px; text-transform: uppercase; }
 .stats-grid strong { color: #f0814c; font-size: 38px; line-height: 1; }
+.product-intro-stats strong { color: #f0814c; font-size: 38px; line-height: 1; }
 .stats-grid span { font-size: 14px; }
+.product-intro-stats span { font-size: 14px; }
 
 .newsletter-section { position: relative; z-index: 0; min-height: 565px; padding: 100px 24px 120px; display: grid; place-items: center; overflow: hidden; isolation: isolate; background: #0b0c0e; }
 .newsletter-section .food-doodles { opacity: .15; background-size: 430px 370px; }
@@ -297,7 +305,6 @@ img { display: block; max-width: 100%; }
   .hero-actions { gap: 9px; }
   .button { min-height: 50px; padding: 0 16px; font-size: 13px; }
   .recipes-section { padding: 75px 20px 46px; }
-  .recipes-section::before { top: -13px; }
   .section-heading { margin-bottom: 32px; }
   .section-heading h2, .newsletter-card h2 { font-size: 29px; }
   .section-heading p { font-size: 14px; line-height: 1.65; }
@@ -326,12 +333,19 @@ img { display: block; max-width: 100%; }
   .chef-photo { width: 205px; height: 205px; }
   .chef-card h3 { margin-top: 18px; }
   .community-section { width: calc(100% - 40px); min-height: 500px; }
+  .product-intro-section { width: calc(100% - 40px); min-height: 500px; }
   .community-content { padding: 65px 22px; }
+  .product-intro-content { padding: 65px 22px; }
   .community-content h2 { margin: 17px 0 38px; font-size: 28px; line-height: 1.35; }
+  .product-intro-content h2 { margin: 17px 0 38px; font-size: 28px; line-height: 1.35; }
   .desktop-break { display: none; }
+  .product-intro-break { display: none; }
   .stats-grid { grid-template-columns: 1fr; gap: 27px; }
+  .product-intro-stats { grid-template-columns: 1fr; gap: 27px; }
   .stats-grid strong { font-size: 29px; }
+  .product-intro-stats strong { font-size: 29px; }
   .stats-grid span { font-size: 12px; }
+  .product-intro-stats span { font-size: 12px; }
   .newsletter-section { min-height: 430px; padding: 60px 17px 75px; }
   .newsletter-card { min-height: 270px; padding: 49px 20px; }
   .newsletter-icon { display: block; }
