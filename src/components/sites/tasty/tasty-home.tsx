@@ -155,9 +155,9 @@ export default function TastyHome() {
           </article>)}
           {visibleRecipes.length === 0 && <p className="empty-results">No recipes found. Try another search.</p>}
         </div>
-        <div className="recipe-actions">
-          {(categoryFilter || query) && <button className="clear-filter" onClick={() => { setCategoryFilter(null); setQuery(""); }}>Clear search and filters</button>}
-        </div>
+        {(categoryFilter || query) && <div className="recipe-actions">
+          <button className="clear-filter" onClick={() => { setCategoryFilter(null); setQuery(""); }}>Clear search and filters</button>
+        </div>}
       </section>
 
       <section className="category-section section-shell" aria-labelledby="industry">
