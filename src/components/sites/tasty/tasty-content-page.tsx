@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { TastyShell } from "./tasty-shell";
 import { categorySlugs, categoryTitle, industries, productRouteSlugs, recipeHref, tastyRecipes, type TastyRecipe } from "./tasty-data";
 import { LocalPreviewForm, PrintRecipeButton } from "./tasty-preview-form";
+import { InquiryModule } from "./tasty-inquiry-module";
 
 const excerptText = "Integer at faucibus urna. Nullam condimentum leo id elit sagittis auctor. Curabitur elementum nunc a leo imperdiet, nec elementum diam elementum.";
 
@@ -84,7 +85,7 @@ function ContactPage() {
   return <><PageIntro title="Contact">{excerptText}</PageIntro><Breadcrumbs parts={[{ label: "Contact" }]} />
     <section className="tasty-contact tasty-section"><div className="contact-details"><article><h2>Physical Address</h2><p>304 North Cardinal St.<br />Dorchester Center, MA 02124</p></article><article><h2>Email Address</h2><p>info@company.com<br />contact@company.com</p></article><article><h2>Phone Numbers</h2><p>1-555-123-4567<br />1-800-123-4567</p></article><p className="template-note">These address and phone details are sample content from the original demo page, not verified Cavopack contact details.</p></div>
       <div className="contact-copy"><h2>Dolor consectetur adipiscing</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.</p><div className="contact-highlights"><h3>Mauris nunc congue suscipit</h3><p>Nullam condimentum leo id elit sagittis auctor</p><h3>Dolor sit amet consectetur adipiscing</h3></div></div>
-    </section>
+    </section><InquiryModule />
   </>;
 }
 
