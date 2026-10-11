@@ -50,7 +50,7 @@ function RecipeArticle({ recipe }: { recipe: TastyRecipe }) {
 }
 
 function AboutPage() {
-  return <><PageIntro title="About">{excerptText}</PageIntro><Breadcrumbs parts={[{ label: "About" }]} />
+  return <><PageIntro title="About">{excerptText}</PageIntro>
     <section className="tasty-about tasty-section"><div className="about-story"><div><span className="eyebrow">Our story</span><h2>Mauris Imperdiet Orci Dapibus Commodo Morbi in Faucibus.</h2><p>{excerptText} Etiam elementum euismod commodo.</p><p>Proin eleifend eget quam ut efficitur. Mauris a accumsan mauris. Phasellus egestas et risus sit amet hendrerit. Nulla facilisi. Cras urna sem, vulputate sed condimentum a, posuere vel enim.</p><Link className="button" href="/recipes/">Browse Products</Link></div><Image src="/sites/tasty/images/chef-big.png" alt="Cook preparing food" width={620} height={620} /></div>
       <div className="about-video"><Image src="/sites/tasty/images/video-cover.jpg" alt="Cooking class preview" width={1200} height={620} /><div><h2>There are a variety of places where you can experience a cooking class</h2><p>{excerptText}</p><Link className="button" href="/recipes/">Browse Products</Link></div></div>
     </section></>;
@@ -82,7 +82,7 @@ function GiftBoxesPage() {
 }
 
 function ContactPage() {
-  return <><PageIntro title="Contact">{excerptText}</PageIntro><Breadcrumbs parts={[{ label: "Contact" }]} />
+  return <><PageIntro title="Contact">{excerptText}</PageIntro>
     <section className="tasty-contact tasty-section"><div className="contact-details"><article><h2>Physical Address</h2><p>304 North Cardinal St.<br />Dorchester Center, MA 02124</p></article><article><h2>Email Address</h2><p>info@company.com<br />contact@company.com</p></article><article><h2>Phone Numbers</h2><p>1-555-123-4567<br />1-800-123-4567</p></article><p className="template-note">These address and phone details are sample content from the original demo page, not verified Cavopack contact details.</p></div>
       <div className="contact-copy"><h2>Dolor consectetur adipiscing</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.</p><div className="contact-highlights"><h3>Mauris nunc congue suscipit</h3><p>Nullam condimentum leo id elit sagittis auctor</p><h3>Dolor sit amet consectetur adipiscing</h3></div></div>
     </section><InquiryModule />
