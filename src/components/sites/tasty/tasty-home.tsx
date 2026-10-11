@@ -170,8 +170,8 @@ export default function TastyHome() {
 
       <section className="community-section" id="community">
         <div className="community-shade" />
-        <div className="community-content"><span>Meet chefs around the world</span><h2>Join a Global Community of Change<br className="desktop-break" /> Makers and People Like You</h2>
-          <div className="stats-grid"><div><strong>2,000</strong><span>Unique recipes</span></div><div><strong>3,000</strong><span>Awesome members</span></div><div><strong>100%</strong><span>Satisfaction rate</span></div></div>
+        <div className="community-content"><span>How Custom Packaging Works</span><h2>From Your Brief to Production</h2>
+          <div className="stats-grid"><div><strong>01</strong><span>Share your packaging requirements</span></div><div><strong>02</strong><span>Confirm design and specifications</span></div><div><strong>03</strong><span>Request a custom quote</span></div></div>
         </div>
       </section>
 
