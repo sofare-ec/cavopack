@@ -205,21 +205,21 @@ img { display: block; max-width: 100%; }
 .community-section { position: relative; width: calc(100% - 20px); max-width: 1270px; margin: 0 auto; min-height: 580px; display: grid; place-items: center; overflow: hidden; isolation: isolate; background: url("/sites/tasty/images/community-bg.jpg") center 48% / cover no-repeat; color: #fff; }
 .product-intro-section { position: relative; width: calc(100% - 20px); max-width: 1270px; margin: 0 auto; min-height: 580px; display: grid; place-items: center; overflow: hidden; isolation: isolate; background: url("/sites/tasty/images/product-intro-factory.webp") center 48% / cover no-repeat; color: #fff; }
 .community-shade { position: absolute; inset: 0; z-index: -1; background: #17120fbd; }
-.product-intro-shade { position: absolute; inset: 0; z-index: -1; background: rgb(23 18 15 / 37.06%); }
+.product-intro-shade { position: absolute; inset: 0; z-index: -1; background: rgb(16 17 19 / 58%); }
 .community-content { max-width: 900px; padding: 80px 30px; text-align: center; }
 .product-intro-content { max-width: 900px; padding: 80px 30px; text-align: center; }
 .community-content > span { font-size: 14px; text-transform: uppercase; letter-spacing: .5px; }
-.product-intro-content > span { font-size: 14px; text-transform: uppercase; letter-spacing: .5px; }
+.product-intro-content > span { color: #ff9b70; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; }
 .community-content h2 { margin: 19px 0 54px; font-size: 37px; line-height: 1.45; }
-.product-intro-content h2 { margin: 19px 0 54px; font-size: 37px; line-height: 1.45; }
+.product-intro-content h2 { margin: 19px 0 54px; color: #fff; font-size: 37px; line-height: 1.3; }
 .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 55px; }
 .product-intro-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 55px; }
 .stats-grid div { display: flex; flex-direction: column; align-items: center; gap: 10px; text-transform: uppercase; }
 .product-intro-stats div { display: flex; flex-direction: column; align-items: center; gap: 10px; text-transform: uppercase; }
 .stats-grid strong { color: #f0814c; font-size: 38px; line-height: 1; }
-.product-intro-stats strong { color: #f0814c; font-size: 38px; line-height: 1; }
+.product-intro-stats strong { color: #ff9b70; font-size: 25px; line-height: 1.2; }
 .stats-grid span { font-size: 14px; }
-.product-intro-stats span { font-size: 14px; }
+.product-intro-stats span { color: #f1f1f1; font-size: 14px; }
 
 .newsletter-section { position: relative; z-index: 0; min-height: 565px; padding: 100px 24px 120px; display: grid; place-items: center; overflow: hidden; isolation: isolate; background: #0b0c0e; }
 .newsletter-section .food-doodles { opacity: .15; background-size: 430px 370px; }

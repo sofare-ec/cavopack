@@ -136,8 +136,8 @@ export default function TastyHome() {
 
       <section className="product-intro-section" id="product-intro">
         <div className="product-intro-shade" />
-        <div className="product-intro-content"><span>Meet chefs around the world</span><h2>Join a Global Community of Change<br className="product-intro-break" /> Makers and People Like You</h2>
-          <div className="product-intro-stats"><div><strong>2,000</strong><span>Unique recipes</span></div><div><strong>3,000</strong><span>Awesome members</span></div><div><strong>100%</strong><span>Satisfaction rate</span></div></div>
+        <div className="product-intro-content"><span>Custom packaging for businesses</span><h2>Made to Match Your Brand.<br className="product-intro-break" /> Ready for Bulk Orders.</h2>
+          <div className="product-intro-stats"><div><strong>Custom Design</strong><span>Made to match your brand</span></div><div><strong>Product Range</strong><span>Boxes, bags, labels &amp; more</span></div><div><strong>Bulk Orders</strong><span>For business purchasing needs</span></div></div>
         </div>
       </section>
 
