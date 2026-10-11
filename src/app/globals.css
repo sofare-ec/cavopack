@@ -80,10 +80,6 @@ img { display: block; max-width: 100%; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
 .site-header { position: sticky; top: 0; z-index: 20; background: #101113; }
-.floating-contact-links { position: fixed; z-index: 60; right: 20px; bottom: calc(76px + env(safe-area-inset-bottom, 0px)); left: 20px; display: flex; justify-content: space-between; align-items: center; pointer-events: none; }
-.floating-contact-links a { display: grid; place-items: center; pointer-events: auto; }
-.floating-contact-email img { width: 45px; height: 35px; object-fit: contain; }
-.floating-contact-whatsapp img { width: 40px; height: 40px; object-fit: contain; }
 .brand-row { height: 112px; max-width: 1290px; margin: 0 auto; padding: 0 10px; display: grid; grid-template-columns: 1fr auto; align-items: center; border-bottom: 1px solid var(--line); }
 .brand { display: flex; align-items: center; gap: 9px; font-size: 34px; line-height: 1; font-weight: 800; letter-spacing: -1.1px; }
 .brand-qualifier { justify-self: end; align-self: end; margin-bottom: 39px; color: #d5d5d7; font-size: 13px; font-weight: 300; line-height: 1; }
@@ -202,7 +198,7 @@ img { display: block; max-width: 100%; }
 .chef-card h3 { margin: 26px 0 2px; font-size: 16px; }
 .chef-card p { margin: 0 0 22px; color: #cf8a6b; }
 
-.community-section { position: relative; width: calc(100% - 20px); max-width: 1270px; margin: 0 auto; min-height: 580px; display: grid; place-items: center; overflow: hidden; isolation: isolate; background: url("/sites/tasty/images/community-bg.jpg") center 48% / cover no-repeat; color: #fff; }
+.community-section { position: relative; width: calc(100% - 20px); max-width: 1270px; margin: 0 auto; min-height: 580px; display: grid; place-items: center; overflow: hidden; isolation: isolate; background: url("/sites/tasty/images/community-packaging-process.png") center 48% / cover no-repeat; color: #fff; }
 .product-intro-section { position: relative; width: calc(100% - 20px); max-width: 1270px; margin: 0 auto; min-height: 580px; display: grid; place-items: center; overflow: hidden; isolation: isolate; background: url("/sites/tasty/images/product-intro-factory.webp") center 48% / cover no-repeat; color: #fff; }
 .community-shade { position: absolute; inset: 0; z-index: -1; background: #17120fbd; }
 .product-intro-shade { position: absolute; inset: 0; z-index: -1; background: rgb(16 17 19 / 58%); }
@@ -280,9 +276,6 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 760px) {
   html { scroll-padding-top: 134px; }
-  .floating-contact-links { right: 12px; bottom: calc(68px + env(safe-area-inset-bottom, 0px)); left: 12px; }
-  .floating-contact-email img { width: 38px; height: 30px; }
-  .floating-contact-whatsapp img { width: 35px; height: 35px; }
   .brand-row { height: auto; min-height: 76px; padding: 12px 19px; grid-template-columns: 1fr; justify-items: start; gap: 6px; }
   .brand { gap: 6px; font-size: 29px; }
   .brand-qualifier { justify-self: start; align-self: start; margin: 0; font-size: 13px; }
