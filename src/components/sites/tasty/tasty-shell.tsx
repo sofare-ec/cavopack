@@ -5,15 +5,16 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, type ReactNode } from "react";
 import { Menu, X } from "lucide-react";
+import { industries, products } from "./tasty-data";
 
 export function TastyHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const productActive = pathname.startsWith("/recipes") || pathname.startsWith("/category/") || !!pathname.match(/^\/20\d\d\//);
+  const productActive = products.some((product) => pathname === `/${product.slug}/`);
   const nav = [
     ["Home", "/", pathname === "/"],
     ["Products", "/#products", !!productActive],
-    ["Industries", "/#industry", pathname.startsWith("/industries/")],
+    ["Industries", "/#industry", pathname.startsWith("/industries/") || industries.some((industry) => pathname === `/${industry.slug}/`)],
     ["About", "/about/", pathname.startsWith("/about/")],
     ["Contact", "/contact/", pathname.startsWith("/contact/")],
   ] as const;

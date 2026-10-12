@@ -3,21 +3,13 @@
 import Link from "next/link";
 
 import Image from "next/image";
-import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
 import { TastyFooter, TastyHeader } from "./tasty-shell";
-import { industries } from "./tasty-data";
-
-type Recipe = {
-  title: string;
-  category: string[];
-  categoryLabel?: string;
-  image: string;
-  href: string;
-};
+import { industries, products } from "./tasty-data";
 
 const heroSlides = [
   { src: "/sites/tasty/images/hero-cavopack-red-gift-box.webp", alt: "Woman presenting a red Cavopack gift box", href: "/gift-boxes/", width: 1500, height: 1500 },
@@ -29,55 +21,6 @@ const heroSlides = [
   { src: "/sites/tasty/images/hero-cavopack-hang-tags.webp", alt: "Cavopack paper hang tags on a garment", href: "/hang-tag/", width: 1500, height: 1500 },
 ];
 
-const recipes: Recipe[] = [
-  {
-    title: "Custom rigid gift boxes, crafted to your brand specifications with consistent quality for bulk orders.",
-    category: ["Aperitives"],
-    categoryLabel: "gift boxes",
-    image: "/sites/tasty/images/product-type-01.webp",
-    href: "/gift-boxes/",
-  },
-  {
-    title: "Custom-branded tote bags, tailored to your needs with consistent quality for bulk orders.",
-    category: ["Pizzas"],
-    categoryLabel: "TOTE BAG",
-    image: "/sites/tasty/images/product-type-02.webp",
-    href: "/tote-bag/",
-  },
-  {
-    title: "Custom packaging designed to protect products, showcase brands, and support efficient bulk orders.",
-    category: ["Aperitives"],
-    categoryLabel: "PACKAGING",
-    image: "/sites/tasty/images/product-type-03.webp",
-    href: "/packaging/",
-  },
-  {
-    title: "Custom bakery boxes with secure closures, convenient handles, and standout branding.",
-    category: ["Salads"],
-    categoryLabel: "BRKERY BOXES",
-    image: "/sites/tasty/images/product-type-04.webp",
-    href: "/brkery-boxes/",
-  },
-  {
-    title: "Custom self-adhesive labels for bottles and packaging, tailored to your brand and product specifications.",
-    category: ["Aperitives"],
-    categoryLabel: "LABEL",
-    image: "/sites/tasty/images/product-type-05.webp",
-    href: "/label/",
-  },
-  {
-    title: "Custom hang tags add polished branding and clear product information to packaging.",
-    category: ["Deserts", "Salads"],
-    categoryLabel: "HANG TAG",
-    image: "/sites/tasty/images/product-type-06.webp",
-    href: "/hang-tag/",
-  },
-];
-
-function FoodDoodles({ className = "" }: { className?: string }) {
-  return <div aria-hidden="true" className={`food-doodles ${className}`} />;
-}
-
 function SectionHeading({ title, children }: { title: string; children: ReactNode }) {
   return (
     <div className="section-heading">
@@ -88,8 +31,6 @@ function SectionHeading({ title, children }: { title: string; children: ReactNod
 }
 
 export default function TastyHome() {
-  const [query, setQuery] = useState("");
-  const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
   const [heroSlide, setHeroSlide] = useState(0);
   const [carouselPaused, setCarouselPaused] = useState(false);
   const touchStartX = useRef<number | null>(null);
@@ -100,21 +41,11 @@ export default function TastyHome() {
     return () => window.clearInterval(timer);
   }, [carouselPaused]);
 
-  const visibleRecipes = useMemo(() => {
-    const term = query.trim().toLowerCase();
-    return recipes.filter((recipe) => {
-      const matchesQuery = !term || recipe.title.toLowerCase().includes(term) || recipe.category.some((item) => item.toLowerCase().includes(term));
-      const matchesCategory = !categoryFilter || recipe.category.includes(categoryFilter);
-      return matchesQuery && matchesCategory;
-    });
-  }, [categoryFilter, query]);
-
   return (
     <main className="tasty-site">
       <TastyHeader />
 
       <section className="hero" id="top">
-        <FoodDoodles />
         <div className="hero-inner">
           <div className="hero-copy">
             <span className="eyebrow">CUSTOM PACKAGING</span>
@@ -141,23 +72,18 @@ export default function TastyHome() {
         </div>
       </section>
 
-      <section className="recipes-section section-shell" id="products">
+      <section className="products-section section-shell" id="products">
         <SectionHeading title="Explore By Product Type">Start with the packaging type that best fits your project. Each type has its own page with material options and key details. Looking for more styles? Contact us to explore additional options and request a quote.</SectionHeading>
-        <div className="recipe-grid">
-          {visibleRecipes.map((recipe, index) => <article className="recipe-card" key={recipe.title}>
-            <Link className="recipe-image" href={recipe.href}><Image src={recipe.image} alt={recipe.title} width={800} height={520} sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw" /></Link>
-            <div className="recipe-content">
-              <div className="recipe-tags">{recipe.category.slice(0, recipe.categoryLabel ? 1 : undefined).map((tag) => <Link id={recipe.categoryLabel ? "gift-boxes" : undefined} key={tag} href={`/category/${tag.toLowerCase()}/`}>{recipe.categoryLabel ?? tag}</Link>)}</div>
-              <h3><Link href={recipe.href}>{recipe.title}</Link></h3>
-              <div className="recipe-byline"><a className="recipe-whatsapp" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer" aria-label="Request a packaging quote on WhatsApp"><Image src="/sites/tasty/images/whatsapp-logo.png" alt="WhatsApp" width={42} height={42} /></a><a className="recipe-quote" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer">Get Custom Quote</a></div>
+        <div className="product-grid">
+          {products.map((product) => <article className="product-card" key={product.title}>
+            <Link className="product-image" href={`/${product.slug}/`}><Image src={product.image} alt={product.title} width={800} height={520} sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw" /></Link>
+            <div className="product-content">
+              <div className="product-tags"><Link href={`/${product.slug}/`}>{product.label}</Link></div>
+              <h3><Link href={`/${product.slug}/`}>{product.title}</Link></h3>
+              <div className="product-byline"><a className="product-whatsapp" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer" aria-label="Request a packaging quote on WhatsApp"><Image src="/sites/tasty/images/whatsapp-logo.png" alt="WhatsApp" width={42} height={42} /></a><a className="product-quote" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer">Get Custom Quote</a></div>
             </div>
-            {index === 0 && query && <span className="sr-only">First search result</span>}
           </article>)}
-          {visibleRecipes.length === 0 && <p className="empty-results">No recipes found. Try another search.</p>}
         </div>
-        {(categoryFilter || query) && <div className="recipe-actions">
-          <button className="clear-filter" onClick={() => { setCategoryFilter(null); setQuery(""); }}>Clear search and filters</button>
-        </div>}
       </section>
 
       <section className="category-section section-shell" aria-labelledby="industry">
