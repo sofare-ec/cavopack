@@ -17,10 +17,71 @@ function PageIntro({ title, children = excerptText }: { title: string; children?
 }
 
 function AboutPage() {
-  return <><PageIntro title="About">{excerptText}</PageIntro>
-    <section className="tasty-about tasty-section"><div className="about-story"><div><span className="eyebrow">Our story</span><h2>Mauris Imperdiet Orci Dapibus Commodo Morbi in Faucibus.</h2><p>{excerptText} Etiam elementum euismod commodo.</p><p>Proin eleifend eget quam ut efficitur. Mauris a accumsan mauris. Phasellus egestas et risus sit amet hendrerit. Nulla facilisi. Cras urna sem, vulputate sed condimentum a, posuere vel enim.</p><Link className="button" href="/#products">Browse Products</Link></div><Image src="/sites/tasty/images/chef-big.png" alt="Cook preparing food" width={620} height={620} /></div>
-      <div className="about-video"><Image src="/sites/tasty/images/video-cover.jpg" alt="Cooking class preview" width={1200} height={620} /><div><h2>There are a variety of places where you can experience a cooking class</h2><p>{excerptText}</p><Link className="button" href="/#products">Browse Products</Link></div></div>
-    </section></>;
+  return <div className="about-page">
+    <section className="about-hero" aria-labelledby="about-title">
+      <span className="eyebrow">About Cavopack</span>
+      <h1 id="about-title">Packaging made for<br />your brand and business.</h1>
+      <p>From gift boxes and tote bags to labels and bakery boxes, we help businesses develop custom packaging tailored to their specifications and bulk order needs.</p>
+    </section>
+
+    <div className="about-shell">
+      <section className="about-overview" aria-labelledby="about-overview-title">
+        <div className="about-overview-copy">
+          <span className="eyebrow">Who we are</span>
+          <h2 id="about-overview-title">Your packaging project.<br />Our focus.</h2>
+          <p>Cavopack focuses on custom packaging for brands and business purchasing needs. We bring product requirements, packaging choices and brand presentation into one conversation.</p>
+          <p>Explore gift boxes, tote bags, packaging boxes, labels, hang tags and bakery packaging. Tell us what you need to pack, how it should look and the quantities you have in mind.</p>
+          <dl className="about-details">
+            <div><dt>Made for your brand</dt><dd>Size, structure, materials and print requirements.</dd></div>
+            <div><dt>Planned for your business</dt><dd>Product use, order quantity and delivery needs.</dd></div>
+          </dl>
+          <Link className="about-text-link" href="/#products">Explore our packaging range</Link>
+        </div>
+        <figure className="about-overview-image">
+          <Image src="/sites/tasty/images/product-intro-factory.webp" alt="Factory building and loading area shown as a packaging manufacturing reference" width={2000} height={952} sizes="(max-width: 760px) 100vw, 50vw" preload />
+          <figcaption>Packaging manufacturing scene · illustrative reference</figcaption>
+        </figure>
+      </section>
+
+      <section className="about-capabilities" aria-labelledby="about-capabilities-title">
+        <div className="about-section-heading">
+          <div><span className="eyebrow">Production &amp; quality</span><h2 id="about-capabilities-title">The details that shape<br />your packaging.</h2></div>
+          <p>Define the structure, print finish and quality requirements for your project before moving into production.</p>
+        </div>
+        <div className="about-capability-grid">
+          <article className="about-capability-card">
+            <Image src="/sites/tasty/images/product-type-03.webp" alt="Printed paper packaging box illustrating materials and structure" width={800} height={530} sizes="(max-width: 760px) 100vw, 33vw" />
+            <div><span className="about-card-number">01 / Materials &amp; structure</span><h3>A fit for your product.</h3><p>Discuss dimensions, materials, box construction and the protection your product needs.</p></div>
+          </article>
+          <article className="about-capability-card">
+            <Image src="/sites/tasty/images/product-type-01.webp" alt="Red gift box illustrating printed branding and decorative finishes" width={800} height={530} sizes="(max-width: 760px) 100vw, 33vw" />
+            <div><span className="about-card-number">02 / Printing &amp; finishing</span><h3>A finish for your brand.</h3><p>Share your artwork, colours and finish preferences so the packaging reflects your brand.</p></div>
+          </article>
+          <article className="about-capability-card">
+            <Image className="about-inspection-image" src="/sites/tasty/images/community-factory.webp" alt="Illustrative production scene with a worker examining a packaging box" width={2000} height={953} sizes="(max-width: 760px) 100vw, 33vw" />
+            <div><span className="about-card-number">03 / Quality requirements</span><h3>Clear expectations.</h3><p>Agree on appearance, construction and packing requirements before production. Image shown is a production scene reference.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section className="about-process" aria-labelledby="about-process-title">
+        <div className="about-process-heading"><span className="eyebrow">How we work together</span><h2 id="about-process-title">From your brief to delivery.</h2><p>A clear starting point for your custom packaging project.</p></div>
+        <ol className="about-process-grid">
+          <li><span>01</span><h3>Share your requirements</h3><p>Tell us your product, packaging type, size and estimated order quantity.</p></li>
+          <li><span>02</span><h3>Confirm details &amp; quote</h3><p>Discuss materials, artwork, specifications and the quotation for your project.</p></li>
+          <li><span>03</span><h3>Agree on samples</h3><p>Confirm sampling requirements and review the details before approving production.</p></li>
+          <li><span>04</span><h3>Plan production &amp; delivery</h3><p>Agree on the production schedule, packing and delivery arrangements.</p></li>
+        </ol>
+      </section>
+
+      <section className="about-cta" aria-labelledby="about-cta-title">
+        <div><span className="eyebrow">Start a conversation</span><h2 id="about-cta-title">Have a packaging<br />project in mind?</h2><p>Send us your specifications, reference images and order quantity. Let’s discuss the next steps for your packaging.</p>
+          <div className="about-cta-actions"><a className="button" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer"><Image src="/sites/tasty/images/whatsapp.png" alt="" width={20} height={20} />Discuss Your Project</a><a className="button button-outline" href="mailto:sofare@cavopack.com">Email Cavopack</a></div>
+        </div>
+        <div className="about-cta-contact"><span>Contact Cavopack</span><a href="mailto:sofare@cavopack.com">sofare@cavopack.com</a><a href="tel:+8613506614950">(+86) 13506614950</a><Link className="about-text-link" href="/contact/">Visit our contact page</Link></div>
+      </section>
+    </div>
+  </div>;
 }
 
 function IndustriesPage() {

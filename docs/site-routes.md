@@ -3,7 +3,8 @@
 ## 保留页面
 
 - `/`：首页。
-- `/about/`、`/contact/`：用户选择暂时保留现有示例正文和图片；Contact 保留询单模块。
+- `/about/`：包装业务介绍、生产要求、合作流程和询单入口；工厂/车间图为示意参考。
+- `/contact/`：用户选择暂时保留现有示例正文；保留询单模块。
 - `/industries/`：现有行业入口页。
 - 产品：`/gift-boxes/`、`/tote-bag/`、`/packaging/`、`/brkery-boxes/`、`/label/`、`/hang-tag/`。
 - 行业：`/cosmetics/`、`/jewelry/`、`/bakery/`、`/clothing/`、`/candle/`、`/perfume/`、`/e-commerce/`、`/gift-shop/`。
