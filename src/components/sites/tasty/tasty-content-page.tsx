@@ -122,8 +122,8 @@ function ContactPage() {
         <dl className="contact-information">
           <div><dt>Email</dt><dd><a href="mailto:sofare@cavopack.com">sofare@cavopack.com</a></dd></div>
           <div><dt>Phone</dt><dd><a href="tel:+8613506614950">(+86) 13506614950</a></dd></div>
-          <div><dt>Company</dt><dd lang="zh-CN">温州荣诺包装有限公司</dd></div>
-          <div><dt>Address</dt><dd>Building 68, Zone D, Guohong Intelligent Manufacturing New City, Longgang, Wenzhou, Zhejiang, China<span className="contact-address-original" lang="zh-CN">浙江省温州市龙港市国鸿智造新城D区68幢</span></dd></div>
+          <div><dt>Company</dt><dd>Wenzhou Rongnuo Packaging Co., Ltd.</dd></div>
+          <div><dt>Address</dt><dd>Building 68, Zone D, Guohong Intelligent Manufacturing New City, Longgang, Wenzhou, Zhejiang, China</dd></div>
         </dl>
         <a className="button contact-whatsapp" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopack%20team.%20I%27d%20like%20to%20discuss%20a%20custom%20packaging%20project." target="_blank" rel="noopener noreferrer"><Image src="/sites/tasty/images/whatsapp.png" alt="" width={20} height={20} />Chat on WhatsApp</a>
         <p className="contact-help">Not sure about materials or dimensions? Share your product details or a reference image to start.</p>
