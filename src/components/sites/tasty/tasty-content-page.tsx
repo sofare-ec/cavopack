@@ -5,6 +5,7 @@ import { TastyShell } from "./tasty-shell";
 import { industries, products } from "./tasty-data";
 import { notFound } from "next/navigation";
 import { InquiryModule } from "./tasty-inquiry-module";
+import { ProductLandingPage } from "./product-landing-page";
 
 function Breadcrumbs({ parts }: { parts: { label: string; href?: string }[] }) {
   return <div className="tasty-breadcrumbs"><Link href="/">Home</Link>{parts.map((part, i) => <span key={`${part.label}-${i}`}> / {part.href ? <Link href={part.href}>{part.label}</Link> : part.label}</span>)}</div>;
@@ -98,15 +99,6 @@ function IndustryPage({ industry }: { industry: (typeof industries)[number] }) {
   </>;
 }
 
-function ProductPage({ product }: { product: (typeof products)[number] }) {
-  return <><PageIntro title={product.label}>{product.title}</PageIntro>
-    <section className="tasty-article">
-      <figure className="article-cover"><Image src={product.image} alt={product.title} width={800} height={530} priority /></figure>
-      <div className="article-body"><p>{product.title}</p><a className="button" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer">Get Custom Quote</a></div>
-    </section>
-  </>;
-}
-
 function ContactPage() {
   return <div className="contact-page">
     <section className="contact-hero" aria-labelledby="contact-title">
@@ -141,7 +133,7 @@ export default function TastyContentPage({ slug }: { slug: string[] }) {
   if (path === "about") content = <AboutPage />;
   else if (path === "industries") content = <IndustriesPage />;
   else if (path === "contact") content = <ContactPage />;
-  else if (product) content = <ProductPage product={product} />;
+  else if (product) content = <ProductLandingPage product={product} />;
   else if (industry) content = <IndustryPage industry={industry} />;
   else notFound();
   return <TastyShell>{content}</TastyShell>;

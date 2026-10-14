@@ -11,6 +11,8 @@
 
 首页产品标签、图片和标题指向同一产品页。About 的 Browse Products 指向首页 `/#products`。
 
+六类产品是独立落地页，共用模板、独立标题与说明、规格、FAQ、相关产品和预选询单类别。首页 Get Custom Quote 指向对应产品页的 #message；WhatsApp 消息携带类别。样图为 AI 示意，需用用户供图替换；表单仍不发送、不保存。
+
 ## 已移除页面
 
 - `/recipes/`、`/recipes/page/2/`。

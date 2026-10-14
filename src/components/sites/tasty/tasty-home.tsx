@@ -80,7 +80,7 @@ export default function TastyHome() {
             <div className="product-content">
               <div className="product-tags"><Link href={`/${product.slug}/`}>{product.label}</Link></div>
               <h3><Link href={`/${product.slug}/`}>{product.title}</Link></h3>
-              <div className="product-byline"><a className="product-whatsapp" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer" aria-label="Request a packaging quote on WhatsApp"><Image src="/sites/tasty/images/whatsapp-logo.png" alt="WhatsApp" width={42} height={42} /></a><a className="product-quote" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopacks%20team.%20I%E2%80%99d%20like%20to%20request%20a%20quote%20for%20custom%20packaging." target="_blank" rel="noopener noreferrer">Get Custom Quote</a></div>
+              <div className="product-byline"><a className="product-whatsapp" href={`https://wa.me/8613506614950?text=${encodeURIComponent(`Hello, Cavopack team. I'd like to request a quote for custom ${product.label.toLowerCase()}.`)}`} target="_blank" rel="noopener noreferrer" aria-label={`Request a ${product.label.toLowerCase()} quote on WhatsApp`}><Image src="/sites/tasty/images/whatsapp-logo.png" alt="WhatsApp" width={42} height={42} /></a><Link className="product-quote" href={`/${product.slug}/#message`}>Get Custom Quote</Link></div>
             </div>
           </article>)}
         </div>
