@@ -16,6 +16,7 @@
 - 首页：包装轮播、工厂介绍、六类产品、八个行业、包装流程、联系页脚和固定导航。
 - 产品与行业数据：`src/components/sites/tasty/tasty-data.ts`。
 - 六类产品共用 `product-landing-page.tsx` 版式，各自内容见 `product-landing-data.ts`；样图位于 `public/sites/tasty/images/landing/`，标注为示意。
+- 八个行业共用 `industry-landing-page.tsx`，各自内容见 `industry-landing-data.ts`；行业总览为 `/industries/`。沿用现有行业示意图，包装组合与应用概念链接至六类产品页；询单携带行业。
 - 内容页：`tasty-content-page.tsx`；首页：`tasty-home.tsx`。
 - Header、Footer：`tasty-shell.tsx`；样式：`src/app/globals.css`。
 - 路由清单见 `docs/site-routes.md`。

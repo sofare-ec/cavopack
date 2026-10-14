@@ -364,7 +364,7 @@ img { display: block; max-width: 100%; }
   .tasty-form-row { grid-template-columns: 1fr; }
 }
 
-/* Six independent product landing pages */
+/* Product and industry landing pages */
 .landing-page { max-width: 1290px; margin: 0 auto; padding: 22px 20px 64px; }
 .landing-breadcrumb { display: flex; flex-wrap: wrap; gap: 10px; color: var(--muted); font-size: 12px; margin-bottom: 26px; }
 .landing-breadcrumb a:hover { color: #ffad7e; }
@@ -420,11 +420,38 @@ img { display: block; max-width: 100%; }
 .landing-related-card img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; }
 .landing-related-card > span { display: flex; justify-content: space-between; padding: 18px 20px; font-size: 16px; font-weight: 600; }
 .landing-related-card:hover, .landing-related-card:focus-visible { border-color: #ffad7e; color: #ffad7e; }
+.industry-index-grid, .industry-product-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.industry-index-grid .landing-related-card img { aspect-ratio: 1 / 1; object-fit: cover; }
+.industry-index-grid .landing-related-card > div { padding: 22px; }
+.industry-index-grid h2 { margin: 0 0 12px; font-size: 22px; line-height: 1.3; }
+.industry-index-grid p { margin: 0 0 20px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.industry-index-grid span { color: #ffad7e; font-size: 13px; }
+.industry-image-note { margin: 16px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.industry-scope { margin: 24px 0 0; padding-left: 18px; border-left: 2px solid #8d6044; max-width: 950px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.industry-application-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.industry-application-card { overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #17191c; }
+.industry-application-card img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; }
+.industry-application-card > div { padding: 24px; }
+.industry-application-card h3 { margin: 0 0 12px; font-size: 21px; line-height: 1.3; font-weight: 600; }
+.industry-application-card p { margin: 0 0 20px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.industry-application-card a { color: #ffad7e; font-size: 13px; }
+.industry-application-card a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.industry-brief { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 60px; margin-top: 64px; padding: 34px; border: 1px solid var(--line); border-radius: 16px; background: #141619; }
+.industry-brief .landing-heading { margin-bottom: 0; }
+.industry-brief ol { padding: 0; margin: 0; list-style: none; }
+.industry-brief li { padding: 15px 0; border-bottom: 1px solid var(--line); }
+.industry-brief li:first-child { padding-top: 0; }
+.industry-brief strong { display: block; margin-bottom: 8px; font-size: 16px; }
+.industry-brief li > span { color: var(--muted); font-size: 14px; line-height: 1.8; }
+.industry-bottom-links { display: flex; flex-wrap: wrap; gap: 24px; padding-top: 36px; font-size: 14px; color: #ffad7e; }
+.industry-bottom-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
 @media (max-width: 1000px) {
   .landing-hero { gap: 30px; }
   .landing-customization, .landing-faq, .landing-detail-section, .landing-enquiry { gap: 32px; }
   .landing-style-card { padding: 22px; }
   .landing-order-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .industry-index-grid, .industry-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .industry-application-card > div { padding: 20px; }
 }
 @media (max-width: 760px) {
   .landing-page { padding-top: 20px; padding-bottom: 46px; }
@@ -441,6 +468,8 @@ img { display: block; max-width: 100%; }
   .landing-actions { flex-direction: column; }
   .landing-actions .button { justify-content: center; }
   .landing-enquiry > div { padding-top: 0; }
+  .industry-index-grid, .industry-product-grid, .industry-application-grid, .industry-brief { grid-template-columns: 1fr; gap: 22px; }
+  .industry-brief { margin-top: 44px; padding: 26px 22px; }
 }
 @media (max-width: 760px) {
   .contact-hero { padding: 32px 20px 30px; }

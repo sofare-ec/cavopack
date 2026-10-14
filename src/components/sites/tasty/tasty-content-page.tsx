@@ -6,14 +6,7 @@ import { industries, products } from "./tasty-data";
 import { notFound } from "next/navigation";
 import { InquiryModule } from "./tasty-inquiry-module";
 import { ProductLandingPage } from "./product-landing-page";
-
-function Breadcrumbs({ parts }: { parts: { label: string; href?: string }[] }) {
-  return <div className="tasty-breadcrumbs"><Link href="/">Home</Link>{parts.map((part, i) => <span key={`${part.label}-${i}`}> / {part.href ? <Link href={part.href}>{part.label}</Link> : part.label}</span>)}</div>;
-}
-
-function PageIntro({ title, children }: { title: string; children: ReactNode }) {
-  return <section className="tasty-page-intro"><span className="eyebrow">Cavopack</span><h1>{title}</h1><div>{children}</div></section>;
-}
+import { IndustryLandingPage, IndustriesOverview } from "./industry-landing-page";
 
 function AboutPage() {
   return <div className="about-page">
@@ -83,22 +76,6 @@ function AboutPage() {
   </div>;
 }
 
-function IndustriesPage() {
-  return <><PageIntro title="Industries">Industry information about Cavopack’s packaging solutions will be added here.</PageIntro><Breadcrumbs parts={[{ label: "Industries" }]} />
-    <section className="tasty-empty"><h2>Industry details are coming soon.</h2></section>
-  </>;
-}
-
-function IndustryPage({ industry }: { industry: (typeof industries)[number] }) {
-  const description = `Custom packaging for ${industry.title.toLowerCase()} businesses. Contact us to discuss your requirements.`;
-  return <><PageIntro title={`${industry.title} Packaging`}><><Breadcrumbs parts={[{ label: "Industries", href: "/#industry" }, { label: industry.title }]} />{description}</></PageIntro>
-    <section className="tasty-article">
-      <figure className="article-cover"><Image src={industry.image} alt={`${industry.title} packaging scene`} width={1100} height={720} priority /></figure>
-      <div className="article-body"><p>{description}</p><Link className="button" href="/contact/">Get Custom Quote</Link></div>
-    </section>
-  </>;
-}
-
 function ContactPage() {
   return <div className="contact-page">
     <section className="contact-hero" aria-labelledby="contact-title">
@@ -131,10 +108,10 @@ export default function TastyContentPage({ slug }: { slug: string[] }) {
   const product = products.find((item) => item.slug === path);
   let content: ReactNode;
   if (path === "about") content = <AboutPage />;
-  else if (path === "industries") content = <IndustriesPage />;
+  else if (path === "industries") content = <IndustriesOverview />;
   else if (path === "contact") content = <ContactPage />;
   else if (product) content = <ProductLandingPage product={product} />;
-  else if (industry) content = <IndustryPage industry={industry} />;
+  else if (industry) content = <IndustryLandingPage industry={industry} />;
   else notFound();
   return <TastyShell>{content}</TastyShell>;
 }
