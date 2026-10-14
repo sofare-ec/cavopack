@@ -6,13 +6,11 @@ import { industries, products } from "./tasty-data";
 import { notFound } from "next/navigation";
 import { InquiryModule } from "./tasty-inquiry-module";
 
-const excerptText = "Integer at faucibus urna. Nullam condimentum leo id elit sagittis auctor. Curabitur elementum nunc a leo imperdiet, nec elementum diam elementum.";
-
 function Breadcrumbs({ parts }: { parts: { label: string; href?: string }[] }) {
   return <div className="tasty-breadcrumbs"><Link href="/">Home</Link>{parts.map((part, i) => <span key={`${part.label}-${i}`}> / {part.href ? <Link href={part.href}>{part.label}</Link> : part.label}</span>)}</div>;
 }
 
-function PageIntro({ title, children = excerptText }: { title: string; children?: ReactNode }) {
+function PageIntro({ title, children }: { title: string; children: ReactNode }) {
   return <section className="tasty-page-intro"><span className="eyebrow">Cavopack</span><h1>{title}</h1><div>{children}</div></section>;
 }
 
@@ -110,11 +108,29 @@ function ProductPage({ product }: { product: (typeof products)[number] }) {
 }
 
 function ContactPage() {
-  return <><PageIntro title="Contact">{excerptText}</PageIntro>
-    <section className="tasty-contact tasty-section"><div className="contact-details"><article><h2>Physical Address</h2><p>304 North Cardinal St.<br />Dorchester Center, MA 02124</p></article><article><h2>Email Address</h2><p>info@company.com<br />contact@company.com</p></article><article><h2>Phone Numbers</h2><p>1-555-123-4567<br />1-800-123-4567</p></article><p className="template-note">These address and phone details are sample content from the original demo page, not verified Cavopack contact details.</p></div>
-      <div className="contact-copy"><h2>Dolor consectetur adipiscing</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.</p><div className="contact-highlights"><h3>Mauris nunc congue suscipit</h3><p>Nullam condimentum leo id elit sagittis auctor</p><h3>Dolor sit amet consectetur adipiscing</h3></div></div>
-    </section><InquiryModule />
-  </>;
+  return <div className="contact-page">
+    <section className="contact-hero" aria-labelledby="contact-title">
+      <span className="eyebrow">Contact Cavopack</span>
+      <h1 id="contact-title">Let’s Discuss Your<br />Packaging Project.</h1>
+      <p>Tell us what you need to pack, your preferred packaging style and estimated quantity. We’ll discuss the specifications and quotation with you.</p>
+    </section>
+    <div className="contact-layout">
+      <section className="contact-direct" aria-labelledby="contact-direct-title">
+        <span className="eyebrow">Start a conversation</span>
+        <h2 id="contact-direct-title">Talk to Cavopack</h2>
+        <p className="contact-direct-intro">Custom packaging, made for your brand. Contact us by email or WhatsApp to discuss your project.</p>
+        <dl className="contact-information">
+          <div><dt>Email</dt><dd><a href="mailto:sofare@cavopack.com">sofare@cavopack.com</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+8613506614950">(+86) 13506614950</a></dd></div>
+          <div><dt>Company</dt><dd lang="zh-CN">温州荣诺包装有限公司</dd></div>
+          <div><dt>Address</dt><dd>Building 68, Zone D, Guohong Intelligent Manufacturing New City, Longgang, Wenzhou, Zhejiang, China<span className="contact-address-original" lang="zh-CN">浙江省温州市龙港市国鸿智造新城D区68幢</span></dd></div>
+        </dl>
+        <a className="button contact-whatsapp" href="https://wa.me/8613506614950?text=Hello%2C%20Cavopack%20team.%20I%27d%20like%20to%20discuss%20a%20custom%20packaging%20project." target="_blank" rel="noopener noreferrer"><Image src="/sites/tasty/images/whatsapp.png" alt="" width={20} height={20} />Chat on WhatsApp</a>
+        <p className="contact-help">Not sure about materials or dimensions? Share your product details or a reference image to start.</p>
+      </section>
+      <InquiryModule />
+    </div>
+  </div>;
 }
 
 export default function TastyContentPage({ slug }: { slug: string[] }) {
